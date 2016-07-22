@@ -57,6 +57,11 @@ packages:
         - CVE-2016-1283
         - CVE-2016-3191
   - pkg:
+      name: wget
+      ver: 1.17.1-r1
+      fixes:
+        - CVE-2016-4971
+  - pkg:
       name: wpa_supplicant
       ver: 2.5-r3
       fixes:
