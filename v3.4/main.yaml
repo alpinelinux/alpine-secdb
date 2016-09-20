@@ -27,11 +27,15 @@ packages:
   - pkg:
       name: curl
       secfixes:
-        7.50.1:
+        7.50.3-r0:
+          - CVE-2016-7167
+        7.50.2-r0:
+          - CVE-2016-7141
+        7.50.1-r0:
           - CVE-2016-5419
           - CVE-2016-5420
           - CVE-2016-5421
-        7.36.0:
+        7.36.0-r0:
           - CVE-2014-0138
           - CVE-2014-0139
   - pkg:
@@ -40,20 +44,63 @@ packages:
         2.1.1-r1:
           - CVE-2016-0718
   - pkg:
+      name: flex
+      secfixes:
+        2.6.1-r0:
+          - CVE-2016-6354
+  - pkg:
       name: gd
       secfixes:
         2.2.1-r0:
           - CVE-2016-3074
+        2.2.2-r0:
+          - CVE-2015-8874
+          - CVE-2016-5767
+        2.2.3-r0:
+          - CVE-2016-5766
+          - CVE-2016-6128
+          - CVE-2016-6132
+          - CVE-2016-6207
+          - CVE-2016-6214
   - pkg:
       name: giflib
       secfixes:
         5.1.4-r0:
           - CVE-2016-3977
   - pkg:
+      name: icu
+      secfixes:
+        57.1-r1:
+          - CVE-2016-6293
+  - pkg:
+      name: imagemagick
+      secfixes:
+        6.9.5.3:
+          - CVE-2016-5010
+          - CVE-2016-5687
+          - CVE-2016-5688
+          - CVE-2016-5689
+          - CVE-2016-5690
+          - CVE-2016-5691
+          - CVE-2016-5841
+          - CVE-2016-5842
+          - CVE-2016-6491
+  - pkg:
       name: jq
       secfixes:
         1.5-r1:
           - CVE-2015-8863
+  - pkg:
+      name: krb5
+      secfixes:
+        1.14-r1:
+          - CVE-2015-8629
+          - CVE-2015-8630
+          - CVE-2015-8631
+        1.14-r2:
+          - CVE-2016-3119
+        1.14.3-r0:
+          - CVE-2016-3120
   - pkg:
       name: libarchive
       secfixes:
@@ -66,6 +113,11 @@ packages:
          - CVE-2016-4809
          - CVE-2016-5844
          - CVE-2016-6250
+  - pkg:
+      name: libbsd
+      secfixes:
+        0.8.2:
+          - CVE-2016-2090
   - pkg:
       name: libidn
       secfixes:
@@ -89,11 +141,24 @@ packages:
   - pkg:
       name: openssl
       secfixes:
+        1.0.2h-r0:
+          - CVE-2016-2107
+          - CVE-2016-2105
+          - CVE-2016-2106
+          - CVE-2016-2109
+          - CVE-2016-2176
         1.0.2h-r1:
           - CVE-2016-2177
           - CVE-2016-2178
         1.0.2h-r2:
           - CVE-2016-2180
+        1.0.2h-r3:
+          - CVE-2016-2179
+          - CVE-2016-2182
+          - CVE-2016-6302
+          - CVE-2016-6303
+        1.0.2h-r4:
+          - CVE-2016-2181
   - pkg:
       name: pcre
       secfixes:
@@ -118,6 +183,10 @@ packages:
           - CVE-2016-6258 XSA-182
           - CVE-2016-6259 XSA-183
           - CVE-2016-5403 XSA-184
+        4.6.3-r2:
+          - CVE-2016-7092 XSA-185
+          - CVE-2016-7093 XSA-186
+          - CVE-2016-7094 XSA-187
   - pkg:
       name: zabbix
       secfixes:
