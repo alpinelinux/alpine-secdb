@@ -22,7 +22,8 @@ packages:
   - pkg:
       name: bzip2
       secfixes:
-        1.0.6-r5: CVE-2016-3189
+        1.0.6-r5:
+          - CVE-2016-3189
   - pkg:
       name: collectd
       secfixes:
