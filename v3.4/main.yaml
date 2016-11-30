@@ -25,6 +25,11 @@ packages:
         1.0.6-r5:
           - CVE-2016-3189
   - pkg:
+      name: c-ares
+      secfixes:
+        1.12.0-r0:
+          - CVE-2016-5180
+  - pkg:
       name: collectd
       secfixes:
         5.5.2-r0:
@@ -32,6 +37,18 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.51.0:
+          - CVE-2016-8615
+          - CVE-2016-8616
+          - CVE-2016-8617
+          - CVE-2016-8618
+          - CVE-2016-8619
+          - CVE-2016-8620
+          - CVE-2016-8621
+          - CVE-2016-8622
+          - CVE-2016-8623
+          - CVE-2016-8624
+          - CVE-2016-8625
         7.50.3-r0:
           - CVE-2016-7167
         7.50.2-r0:
@@ -69,11 +86,19 @@ packages:
           - CVE-2016-6132
           - CVE-2016-6207
           - CVE-2016-6214
+        2.2.3-r1:
+          - CVE-2016-7568
   - pkg:
       name: giflib
       secfixes:
         5.1.4-r0:
           - CVE-2016-3977
+  - pkg:
+      name: guile
+      secfixes:
+        2.0.11-r3:
+          - CVE-2016-8605
+          - CVE-2016-8606
   - pkg:
       name: icu
       secfixes:
@@ -92,6 +117,9 @@ packages:
           - CVE-2016-5841
           - CVE-2016-5842
           - CVE-2016-6491
+        6.9.5.9-r1:
+          - CVE-2016-7799
+          - CVE-2016-7906
   - pkg:
       name: jq
       secfixes:
@@ -139,6 +167,11 @@ packages:
         1.7.0-r0:
           - CVE-2016-0787
   - pkg:
+      name: openjpeg
+      secfixes:
+        2.1.2-r0:
+        - CVE-2016-7445
+  - pkg:
       name: openssh
       secfixes:
         7.2_p2-r1:
@@ -177,6 +210,17 @@ packages:
           - CVE-2016-1283
           - CVE-2016-3191
   - pkg:
+      name: py-django
+      secfixes:
+        1.8.16-r0:
+        - CVE-2016-9013
+        - CVE-2016-9014
+  - pkg:
+      name: tar
+      secfixes:
+        1.29-r1:
+          - CVE-2016-6321
+  - pkg:
       name: wget
       secfixes:
         1.17.1-r1:
@@ -198,6 +242,8 @@ packages:
           - CVE-2016-7092 XSA-185
           - CVE-2016-7093 XSA-186
           - CVE-2016-7094 XSA-187
+        4.6.3-r3:
+          - CVE-2016-7777 XSA-190
   - pkg:
       name: zabbix
       secfixes:
