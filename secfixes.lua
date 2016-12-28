@@ -33,6 +33,7 @@ function read_apkbuild(file)
 end
 
 opthelp = [[
+
  --repo=REPO		set repository
  --release=VERSION	distro release branch
 ]]
