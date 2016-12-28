@@ -32,11 +32,26 @@ function read_apkbuild(file)
 	f:close()
 end
 
+function arch_list(a)
+	local str=""
+	for i=1,#a do
+		str=str.."  - "..a[i].."\n"
+	end
+	return str
+end
+
 opthelp = [[
 
  --repo=REPO		set repository
  --release=VERSION	distro release branch
 ]]
+
+archs = {
+	["v3.2"] = { "x86_64", "x86", "armhf" },
+	["v3.3"] = { "x86_64", "x86", "armhf" },
+	["v3.4"] = { "x86_64", "x86", "armhf" },
+	["v3.5"] = { "x86_64", "x86", "armhf", "aarch64" },
+}
 
 opts, args = require('optarg').from_opthelp(opthelp)
 
@@ -49,9 +64,7 @@ io.write(([[
 distroversion: %s
 reponame: %s
 archs:
-  - x86_64
-  - x86
-  - armhf
+]]..arch_list(archs[distroversion])..[[
 urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
