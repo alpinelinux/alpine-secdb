@@ -33,13 +33,14 @@ function read_apkbuild(file)
 end
 
 opthelp = [[
- --repo=REPO	set repository
+ --repo=REPO		set repository
+ --release=VERSION	distro release branch
 ]]
 
 opts, args = require('optarg').from_opthelp(opthelp)
 
 repo = (opts.repo or "main")
-distroversion = "v3.4"
+distroversion = (opts.release or "v3.4")
 
 -- print header
 io.write(([[
