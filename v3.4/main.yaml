@@ -149,10 +149,23 @@ packages:
          - CVE-2016-5844
          - CVE-2016-6250
   - pkg:
+      name: libass
+      secfixes:
+        0.13.4-r0:
+        - CVE-2016-7969
+        - CVE-2016-7970
+        - CVE-2016-7971
+        - CVE-2016-7972
+  - pkg:
       name: libbsd
       secfixes:
         0.8.2:
           - CVE-2016-2090
+  - pkg:
+      name: libgsf
+      secfixes:
+        1.14.41-r0:
+        - CVE-2016-9888
   - pkg:
       name: libidn
       secfixes:
@@ -221,6 +234,11 @@ packages:
         1.29-r1:
           - CVE-2016-6321
   - pkg:
+      name: vim
+      secfixes:
+        7.4.1831-r2:
+        - CVE-2016-1248
+  - pkg:
       name: wget
       secfixes:
         1.17.1-r1:
@@ -244,6 +262,12 @@ packages:
           - CVE-2016-7094 XSA-187
         4.6.3-r3:
           - CVE-2016-7777 XSA-190
+        4.6.3-r6:
+          - CVE-2016-9932 XSA-200
+          - CVE-2016-9815 XSA-201
+          - CVE-2016-9816 XSA-201
+          - CVE-2016-9817 XSA-201
+          - CVE-2016-9818 XSA-201
   - pkg:
       name: zabbix
       secfixes:
