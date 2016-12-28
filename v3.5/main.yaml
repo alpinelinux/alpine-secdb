@@ -1,0 +1,171 @@
+---
+distroversion: v3.5
+reponame: main
+archs:
+  - x86_64
+  - x86
+  - armhf
+  - aarch64
+urlprefix: http://dl-cdn.alpinelinux.org/alpine
+apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
+packages:
+  - pkg:
+      name: bzip2
+      secfixes:
+        1.0.6-r5: CVE-2016-3189
+  - pkg:
+      name: curl
+      secfixes:
+        7.51.0:
+          - CVE-2016-8615
+          - CVE-2016-8616
+          - CVE-2016-8617
+          - CVE-2016-8618
+          - CVE-2016-8619
+          - CVE-2016-8620
+          - CVE-2016-8621
+          - CVE-2016-8622
+          - CVE-2016-8623
+          - CVE-2016-8624
+          - CVE-2016-8625
+        7.50.3:
+          - CVE-2016-7167
+        7.50.2:
+          - CVE-2016-7141
+        7.50.1:
+          - CVE-2016-5419
+          - CVE-2016-5420
+          - CVE-2016-5421
+        7.36.0:
+          - CVE-2014-0138
+          - CVE-2014-0139
+  - pkg:
+      name: icu
+      secfixes:
+        57.1-r1:
+          - CVE-2016-6293
+  - pkg:
+      name: libass
+      secfixes:
+        0.13.4-r0:
+        - CVE-2016-7969
+        - CVE-2016-7970
+        - CVE-2016-7971
+        - CVE-2016-7972
+  - pkg:
+      name: libgit2
+      secfixes:
+        0.24.3-r0:
+        - CVE-2016-8568
+        - CVE-2016-8569
+  - pkg:
+      name: libgsf
+      secfixes:
+        1.14.41-r0:
+        - CVE-2016-9888
+  - pkg:
+      name: libidn
+      secfixes:
+        1.33-r0:
+        -  CVE-2015-8948
+        -  CVE-2016-6261
+        -  CVE-2016-6262
+        -  CVE-2016-6263
+  - pkg:
+      name: memcached
+      secfixes:
+        1.4.33-r0:
+        - CVE-2016-8704
+        - CVE-2016-8705
+        - CVE-2016-8706
+  - pkg:
+      name: musl
+      secfixes:
+        1.1.15-r4:
+          - CVE-2016-8859
+  - pkg:
+      name: openjpeg
+      secfixes:
+        2.1.2-r1:
+          - CVE-2016-9580
+          - CVE-2016-9581
+  - pkg:
+      name: openssl
+      secfixes:
+        1.0.2h-r0:
+          - CVE-2016-2107
+          - CVE-2016-2105
+          - CVE-2016-2106
+          - CVE-2016-2109
+          - CVE-2016-2176
+        1.0.2h-r1:
+          - CVE-2016-2177
+          - CVE-2016-2178
+        1.0.2h-r2:
+          - CVE-2016-2180
+        1.0.2h-r3:
+          - CVE-2016-2179
+          - CVE-2016-2182
+          - CVE-2016-6302
+          - CVE-2016-6303
+        1.0.2h-r4:
+          - CVE-2016-2181
+        1.0.2i-r0:
+          - CVE-2016-2183
+          - CVE-2016-6304
+          - CVE-2016-6306
+  - pkg:
+      name: p7zip
+      secfixes:
+        16.02-r1:
+        - CVE-2016-9296
+  - pkg:
+      name: py-django
+      secfixes:
+        1.8.16-r0:
+        - CVE-2016-9013
+        - CVE-2016-9014
+  - pkg:
+      name: tar
+      secfixes:
+        1.29-r1:
+          - CVE-2016-6321
+  - pkg:
+      name: vim
+      secfixes:
+        8.0.0056-r0:
+          - CVE-2016-1248
+  - pkg:
+      name: xen
+      secfixes:
+        4.7.0-r0:
+          - CVE-2016-6258 XSA-182
+          - CVE-2016-6259 XSA-183
+          - CVE-2016-5403 XSA-184
+        4.7.0-r1:
+          - CVE-2016-7092 XSA-185
+          - CVE-2016-7093 XSA-186
+          - CVE-2016-7094 XSA-187
+        4.7.0-r5:
+          - CVE-2016-7777 XSA-190
+        4.7.1-r1:
+          - CVE-2016-9386 XSA-191
+          - CVE-2016-9382 XSA-192
+          - CVE-2016-9385 XSA-193
+          - CVE-2016-9384 XSA-194
+          - CVE-2016-9383 XSA-195
+          - CVE-2016-9377 XSA-196
+          - CVE-2016-9378 XSA-196
+          - CVE-2016-9381 XSA-197
+          - CVE-2016-9379 XSA-198
+          - CVE-2016-9380 XSA-198
+        4.7.1-r3:
+          - CVE-2016-9932 XSA-200
+          -	CVE-2016-9815 XSA-201
+          -	CVE-2016-9816 XSA-201
+          -	CVE-2016-9817 XSA-201
+          -	CVE-2016-9818 XSA-201
+        4.7.1-r4:
+          - CVE-2016-10024 XSA-202
+          - CVE-2016-10025 XSA-203
+          - CVE-2016-10013 XSA-204

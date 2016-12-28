@@ -1,0 +1,21 @@
+---
+distroversion: v3.5
+reponame: community
+archs:
+  - x86_64
+  - x86
+  - armhf
+  - aarch64
+urlprefix: http://dl-cdn.alpinelinux.org/alpine
+apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
+packages:
+  - pkg:
+      name: neovim
+      secfixes:
+        0.1.6-r1:
+          - CVE-2016-1248
+  - pkg:
+      name: slock
+      secfixes:
+        1.3-r3:
+          - CVE-2016-6866
