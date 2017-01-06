@@ -104,6 +104,8 @@ packages:
       secfixes:
         57.1-r1:
           - CVE-2016-6293
+        57-1-r2:
+          - CVE-2016-7415
   - pkg:
       name: imagemagick
       secfixes:
@@ -182,8 +184,9 @@ packages:
   - pkg:
       name: openjpeg
       secfixes:
-        2.1.2-r0:
-        - CVE-2016-7445
+        2.1.2-r1:
+          - CVE-2016-9580
+          - CVE-2016-9581
   - pkg:
       name: openssh
       secfixes:
@@ -191,6 +194,11 @@ packages:
           - CVE-2016-6210
         7.2_p2-r2:
           - CVE-2016-6515
+        7.2_p2-r4:
+          - CVE-2016-10009
+          - CVE-2016-10010
+          - CVE-2016-10011
+          - CVE-2016-10012
   - pkg:
       name: openssl
       secfixes:
@@ -223,11 +231,48 @@ packages:
           - CVE-2016-1283
           - CVE-2016-3191
   - pkg:
+      name: phpmyadmin
+      secfixes:
+        4.6.5.2-r0:
+          - CVE-2016-9847
+          - CVE-2016-9848
+          - CVE-2016-9849
+          - CVE-2016-9850
+          - CVE-2016-9851
+          - CVE-2016-9852
+          - CVE-2016-9853
+          - CVE-2016-9854
+          - CVE-2016-9855
+          - CVE-2016-9856
+          - CVE-2016-9857
+          - CVE-2016-9858
+          - CVE-2016-9859
+          - CVE-2016-9860
+          - CVE-2016-9861
+          - CVE-2016-9862
+          - CVE-2016-9863
+          - CVE-2016-9864
+          - CVE-2016-9865
+          - CVE-2016-9866
+  - pkg:
       name: py-django
       secfixes:
         1.8.16-r0:
         - CVE-2016-9013
         - CVE-2016-9014
+  - pkg:
+      name: samba
+      secfixes:
+        4.4.5-r2:
+          - CVE-2016-2123
+          - CVE-2016-2125
+          - CVE-2016-2126
+  - pkg:
+      name: squid
+      secfixes:
+        3.5.23-r0:
+        - CVE-2016-10002
+        - CVE-2016-10003
   - pkg:
       name: tar
       secfixes:
@@ -268,6 +313,10 @@ packages:
           - CVE-2016-9816 XSA-201
           - CVE-2016-9817 XSA-201
           - CVE-2016-9818 XSA-201
+        4.6.3-r7:
+          - CVE-2016-10024 XSA-202
+          - CVE-2016-10025 XSA-203
+          - CVE-2016-10013 XSA-204
   - pkg:
       name: zabbix
       secfixes:
