@@ -16,6 +16,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.52.1:
+          - CVE-2016-9594
         7.51.0:
           - CVE-2016-8615
           - CVE-2016-8616
@@ -44,6 +46,8 @@ packages:
       secfixes:
         57.1-r1:
           - CVE-2016-6293
+        57.1-r2:
+          - CVE-2016-7415
   - pkg:
       name: libass
       secfixes:
@@ -89,6 +93,14 @@ packages:
         2.1.2-r1:
           - CVE-2016-9580
           - CVE-2016-9581
+  - pkg:
+      name: openssh
+      secfixes:
+        7.4_p1-r0:
+          - CVE-2016-10009
+          - CVE-2016-10010
+          - CVE-2016-10011
+          - CVE-2016-10012
   - pkg:
       name: openssl
       secfixes:
