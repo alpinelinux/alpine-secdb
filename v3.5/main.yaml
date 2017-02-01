@@ -10,9 +10,27 @@ urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
   - pkg:
+      name: ansible
+      secfixes:
+        2.2.1.0-r0:
+        - CVE-2016-9587
+  - pkg:
+      name: bash
+      secfixes:
+        4.3.46-r5:
+          - CVE-2016-9401
+  - pkg:
+      name: bind
+      secfixes:
+        9.10.4_p5-r0:
+          - CVE-2016-9131
+          - CVE-2016-9147
+          - CVE-2016-9444
+  - pkg:
       name: bzip2
       secfixes:
-        1.0.6-r5: CVE-2016-3189
+        1.0.6-r5:
+          - CVE-2016-3189
   - pkg:
       name: curl
       secfixes:
@@ -49,6 +67,16 @@ packages:
         57.1-r2:
           - CVE-2016-7415
   - pkg:
+      name: lcms2
+      secfixes:
+       2.8-r1:
+       - CVE-2016-10165
+  - pkg:
+      name: libarchive
+      secfixes:
+        3.2.2-r1:
+        - CVE-2017-5601.patch
+  - pkg:
       name: libass
       secfixes:
         0.13.4-r0:
@@ -59,6 +87,10 @@ packages:
   - pkg:
       name: libgit2
       secfixes:
+        0.24.6-r0:
+        - CVE-2016-10128
+        - CVE-2016-10129
+        - CVE-2016-10130
         0.24.3-r0:
         - CVE-2016-8568
         - CVE-2016-8569
@@ -75,6 +107,27 @@ packages:
         -  CVE-2016-6261
         -  CVE-2016-6262
         -  CVE-2016-6263
+  - pkg:
+      name: libvncserver
+      secfixes:
+        0.9.10-r2:
+          - CVE-2016-9941
+          - CVE-2016-9942
+  - pkg:
+      name: mariadb
+      secfixes:
+        10.1.21-r0:
+          - CVE-2016-6664
+          - CVE-2017-3238
+          - CVE-2017-3243
+          - CVE-2017-3244
+          - CVE-2017-3257
+          - CVE-2017-3258
+          - CVE-2017-3265
+          - CVE-2017-3291
+          - CVE-2017-3312
+          - CVE-2017-3317
+          - CVE-2017-3318
   - pkg:
       name: memcached
       secfixes:
@@ -132,16 +185,32 @@ packages:
         16.02-r1:
         - CVE-2016-9296
   - pkg:
+      name: php5-phpmailer
+      secfixes:
+        5.2.4-r1:
+          - CVE-2016-10033
+          - CVE-2016-10045
+  - pkg:
       name: py-django
       secfixes:
         1.8.16-r0:
         - CVE-2016-9013
         - CVE-2016-9014
   - pkg:
+      name: quagga
+      secfixes:
+        1.1.1-r0:
+          - CVE-2017-5495
+  - pkg:
       name: tar
       secfixes:
         1.29-r1:
           - CVE-2016-6321
+  - pkg:
+      name: tiff
+      secfixes:
+        4.0.7-r1:
+          - CVE-2017-5225
   - pkg:
       name: vim
       secfixes:
