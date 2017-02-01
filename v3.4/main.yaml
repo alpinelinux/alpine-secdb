@@ -9,13 +9,32 @@ urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
   - pkg:
+      name: ansible
+      secfixes:
+        2.1.4.0-r0:
+        - CVE-2016-9587
+  - pkg:
       name: apache2
       secfixes:
         2.4.23-r1:
           - CVE-2016-5387
   - pkg:
+      name: bash
+      secfixes:
+        4.3.42-r5:
+          - CVE-2016-9401
+  - pkg:
+      name: bind
+      secfixes:
+        9.10.4_p5-r0:
+          - CVE-2016-9131
+          - CVE-2016-9147
+          - CVE-2016-9444
+  - pkg:
       name: busybox
       secfixes:
+        1.24.2-r12:
+          - CVE-2016-6301
         1.24.2-r0:
           - CVE-2016-2147
           - CVE-2016-2148
@@ -37,7 +56,12 @@ packages:
   - pkg:
       name: curl
       secfixes:
-        7.51.0:
+        7.52.1-r0:
+          - CVE-2016-9594
+          - CVE-2016-9586
+          - CVE-2016-9952
+          - CVE-2016-9953
+        7.51.0-r0:
           - CVE-2016-8615
           - CVE-2016-8616
           - CVE-2016-8617
@@ -123,6 +147,15 @@ packages:
           - CVE-2016-7799
           - CVE-2016-7906
   - pkg:
+      name: irssi
+      secfixes:
+        0.8.21-r0:
+          - CVE-2017-5193
+          - CVE-2017-5194
+          - CVE-2017-5356
+          - CVE-2017-5195
+          - CVE-2017-5196
+  - pkg:
       name: jq
       secfixes:
         1.5-r1:
@@ -139,6 +172,11 @@ packages:
         1.14.3-r0:
           - CVE-2016-3120
   - pkg:
+      name: lcms2
+      secfixes:
+       2.8-r0:
+       - CVE-2016-10165
+  - pkg:
       name: libarchive
       secfixes:
        3.2.0-r0:
@@ -150,6 +188,8 @@ packages:
          - CVE-2016-4809
          - CVE-2016-5844
          - CVE-2016-6250
+       3.2.2-r0:
+         - CVE-2017-5601
   - pkg:
       name: libass
       secfixes:
@@ -163,6 +203,13 @@ packages:
       secfixes:
         0.8.2:
           - CVE-2016-2090
+  - pkg:
+      name: libgit2
+      secfixes:
+        0.24.6-r0:
+        - CVE-2016-10128
+        - CVE-2016-10129
+        - CVE-2016-10130
   - pkg:
       name: libgsf
       secfixes:
@@ -181,6 +228,32 @@ packages:
       secfixes:
         1.7.0-r0:
           - CVE-2016-0787
+  - pkg:
+      name: libvncserver
+      secfixes:
+        0.9.10-r2:
+          - CVE-2016-9941
+          - CVE-2016-9942
+  - pkg:
+      name: libxpm
+      secfixes:
+        3.5.12-r0:
+        - CVE-2016-10164
+  - pkg:
+      name: mariadb
+      secfixes:
+        10.1.21-r0:
+        - CVE-2016-6664
+        - CVE-2017-3238
+        - CVE-2017-3243
+        - CVE-2017-3244
+        - CVE-2017-3257
+        - CVE-2017-3258
+        - CVE-2017-3265
+        - CVE-2017-3291
+        - CVE-2017-3312
+        - CVE-2017-3317
+        - CVE-2017-3318
   - pkg:
       name: openjpeg
       secfixes:
@@ -224,12 +297,24 @@ packages:
           - CVE-2016-2183
           - CVE-2016-6304
           - CVE-2016-6306
+        1.0.2j-r0:
+          - CVE-2016-7052
+        1.0.2k-r0:
+          - CVE-2016-7055
+          - CVE-2017-3731
+          - CVE-2017-3732
   - pkg:
       name: pcre
       secfixes:
         8.38-r1:
           - CVE-2016-1283
           - CVE-2016-3191
+  - pkg:
+      name: php5-phpmailer
+      secfixes:
+        5.2.0-r1:
+          - CVE-2016-10033
+          - CVE-2016-10045
   - pkg:
       name: phpmyadmin
       secfixes:
@@ -278,6 +363,33 @@ packages:
       secfixes:
         1.29-r1:
           - CVE-2016-6321
+  - pkg:
+      name: tiff
+      secfixes:
+        4.0.7-r1:
+          - CVE-2017-5225
+        4.0.7-r0:
+          - CVE-2016-9273
+          - CVE-2016-9297
+          - CVE-2016-9448
+          - CVE-2016-9453
+          - CVE-2016-3186
+          - CVE-2016-3621
+          - CVE-2016-3622
+          - CVE-2016-3623
+          - CVE-2016-3624
+          - CVE-2016-3625
+          - CVE-2016-3658
+          - CVE-2014-8127
+          - CVE-2016-5314
+          - CVE-2016-5315
+          - CVE-2016-5316
+          - CVE-2016-5317
+          - CVE-2016-5320
+          - CVE-2016-5875
+          - CVE-2016-5321
+          - CVE-2016-5323
+          - CVE-2016-5652
   - pkg:
       name: vim
       secfixes:
