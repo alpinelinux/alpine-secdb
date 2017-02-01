@@ -10,6 +10,19 @@ urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
   - pkg:
+      name: firefox-esr
+      secfixes:
+        45.7.0-r0:
+        - CVE-2017-5373
+        - CVE-2017-5375
+        - CVE-2017-5376
+        - CVE-2017-5378
+        - CVE-2017-5380
+        - CVE-2017-5383
+        - CVE-2017-5386
+        - CVE-2017-5390
+        - CVE-2017-5396
+  - pkg:
       name: neovim
       secfixes:
         0.1.6-r1:
