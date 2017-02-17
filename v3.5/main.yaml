@@ -22,6 +22,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.10.4_p6-r0:
+          - CVE-2017-3135
         9.10.4_p5-r0:
           - CVE-2016-9131
           - CVE-2016-9147
@@ -60,6 +62,12 @@ packages:
           - CVE-2014-0138
           - CVE-2014-0139
   - pkg:
+      name: ffmpeg
+      secfixes:
+        3.1.7-r0:
+        - CVE-2017-5024
+        - CVE-2017-5025
+  - pkg:
       name: icu
       secfixes:
         57.1-r1:
@@ -84,6 +92,13 @@ packages:
         - CVE-2016-7970
         - CVE-2016-7971
         - CVE-2016-7972
+  - pkg:
+      name: libevent
+      secfixes:
+        2.0.22-r2:
+        - CVE-2016-10195
+        - CVE-2016-10196
+        - CVE-2016-10197
   - pkg:
       name: libgit2
       secfixes:
@@ -191,6 +206,11 @@ packages:
           - CVE-2016-10033
           - CVE-2016-10045
   - pkg:
+      name: postfixadmin
+      secfixes:
+        3.0.2-r0:
+        - CVE-2017-5930
+  - pkg:
       name: py-django
       secfixes:
         1.8.16-r0:
@@ -207,6 +227,51 @@ packages:
         1.29-r1:
           - CVE-2016-6321
   - pkg:
+      name: tcpdump
+      secfixes:
+        4.9.0-r0:
+        - CVE-2016-7922
+        - CVE-2016-7923
+        - CVE-2016-7924
+        - CVE-2016-7925
+        - CVE-2016-7926
+        - CVE-2016-7927
+        - CVE-2016-7928
+        - CVE-2016-7929
+        - CVE-2016-7930
+        - CVE-2016-7931
+        - CVE-2016-7932
+        - CVE-2016-7933
+        - CVE-2016-7934
+        - CVE-2016-7935
+        - CVE-2016-7936
+        - CVE-2016-7937
+        - CVE-2016-7938
+        - CVE-2016-7939
+        - CVE-2016-7940
+        - CVE-2016-7973
+        - CVE-2016-7974
+        - CVE-2016-7975
+        - CVE-2016-7983
+        - CVE-2016-7984
+        - CVE-2016-7985
+        - CVE-2016-7986
+        - CVE-2016-7992
+        - CVE-2016-7993
+        - CVE-2016-8574
+        - CVE-2016-8575
+        - CVE-2017-5202
+        - CVE-2017-5203
+        - CVE-2017-5204
+        - CVE-2017-5205
+        - CVE-2017-5341
+        - CVE-2017-5342
+        - CVE-2017-5482
+        - CVE-2017-5483
+        - CVE-2017-5484
+        - CVE-2017-5485
+        - CVE-2017-5486
+  - pkg:
       name: tiff
       secfixes:
         4.0.7-r1:
@@ -214,8 +279,18 @@ packages:
   - pkg:
       name: vim
       secfixes:
+        8.0.0329-r0:
+          - CVE-2017-5953
         8.0.0056-r0:
           - CVE-2016-1248
+  - pkg:
+      name: wavpack
+      secfixes:
+        5.1.0-r0:
+        - CVE-2016-10169
+        - CVE-2016-10170
+        - CVE-2016-10171
+        - CVE-2016-10172
   - pkg:
       name: xen
       secfixes:
