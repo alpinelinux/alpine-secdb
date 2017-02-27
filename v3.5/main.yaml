@@ -34,8 +34,15 @@ packages:
         1.0.6-r5:
           - CVE-2016-3189
   - pkg:
+      name: collectd
+      secfixes:
+        5.5.2-r0:
+        -  CVE-2016-6254
+  - pkg:
       name: curl
       secfixes:
+        7.52.1-r2:
+          - CVE-2017-2629
         7.52.1:
           - CVE-2016-9594
         7.51.0:
@@ -292,6 +299,23 @@ packages:
         - CVE-2016-10171
         - CVE-2016-10172
   - pkg:
+      name: wireshark
+      secfixes:
+        2.2.4-r1:
+        - CVE-2017-6014
+        2.2.4-r0:
+        - CVE-2017-5596
+        - CVE-2017-5597
+        2.0.5-r0:
+        - CVE-2016-6505
+        - CVE-2016-6506
+        - CVE-2016-6508
+        - CVE-2016-6509
+        - CVE-2016-6510
+        - CVE-2016-6511
+        - CVE-2016-6512
+        - CVE-2016-6513
+  - pkg:
       name: xen
       secfixes:
         4.7.0-r0:
@@ -325,3 +349,8 @@ packages:
           - CVE-2016-10024 XSA-202
           - CVE-2016-10025 XSA-203
           - CVE-2016-10013 XSA-204
+  - pkg:
+      name: zabbix
+      secfixes:
+        3.0.4-r0:
+        - CVE-2016-10134 ZBX-11023
