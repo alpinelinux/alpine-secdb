@@ -235,6 +235,11 @@ packages:
         - CVE-2016-10196
         - CVE-2016-10197
   - pkg:
+      name: libgcrypt
+      secfixes:
+        1.7.0-r1:
+        - CVE-2016-6313
+  - pkg:
       name: libgit2
       secfixes:
         0.24.6-r0:
@@ -491,6 +496,21 @@ packages:
       secfixes:
         1.17.1-r1:
           - CVE-2016-4971
+  - pkg:
+      name: wireshark
+      secfixes:
+        2.0.10-r0:
+        - CVE-2017-5596
+        - CVE-2017-5597
+        2.0.5-r0:
+        - CVE-2016-6505
+        - CVE-2016-6506
+        - CVE-2016-6508
+        - CVE-2016-6509
+        - CVE-2016-6510
+        - CVE-2016-6511
+        - CVE-2016-6512
+        - CVE-2016-6513
   - pkg:
       name: wpa_supplicant
       secfixes:
