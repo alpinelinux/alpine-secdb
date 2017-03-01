@@ -58,6 +58,11 @@ packages:
         - CVE-2017-5192
         - CVE-2017-5200
   - pkg:
+      name: shadow
+      secfixes:
+          - CVE-2016-6252
+          - CVE-2017-2616
+  - pkg:
       name: slock
       secfixes:
         1.3-r3:
