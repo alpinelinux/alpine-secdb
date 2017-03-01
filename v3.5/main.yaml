@@ -69,6 +69,11 @@ packages:
           - CVE-2014-0138
           - CVE-2014-0139
   - pkg:
+      name: cyrus-sasl
+      secfixes:
+        2.1.26-r7:
+          - CVE-2013-4122
+  - pkg:
       name: ffmpeg
       secfixes:
         3.1.7-r0:
@@ -229,6 +234,11 @@ packages:
         1.1.1-r0:
           - CVE-2017-5495
   - pkg:
+      name: screen
+      secfixes:
+        4.5.1:
+          - CVE-2017-5618
+  - pkg:
       name: tar
       secfixes:
         1.29-r1:
@@ -349,6 +359,11 @@ packages:
           - CVE-2016-10024 XSA-202
           - CVE-2016-10025 XSA-203
           - CVE-2016-10013 XSA-204
+        4.7.1-r5:
+          - XSA-207
+          - CVE-2017-2615 XSA-208
+          - CVE-2017-2620 XSA-209
+          - XSA-210
   - pkg:
       name: zabbix
       secfixes:
