@@ -40,10 +40,29 @@ function arch_list(a)
 	return str
 end
 
+function verify_yaml(file)
+	f = io.open(file)
+	if f == nil then
+		return 1
+	end
+	print("Verifying "..file)
+	local data = yaml.load(f:read("*all"))
+	for _,p in pairs(data.packages) do
+		assert(type(p.pkg.name) == "string")
+		for k,v in pairs(p.pkg.secfixes) do
+			assert(type(k) == "string", file..": "..p.pkg.name..": not a string: "..tostring(k))
+			assert(string.match(k, "^[0-9]+"))
+		end
+	end
+
+	f:close()
+end
+
 opthelp = [[
 
  --repo=REPO		set repository
  --release=VERSION	distro release branch
+ --verify=FILE		verify generated yaml
 ]]
 
 archs = {
@@ -54,6 +73,10 @@ archs = {
 }
 
 opts, args = require('optarg').from_opthelp(opthelp)
+
+if opts.verify then
+	os.exit(verify_yaml(opts.verify))
+end
 
 repo = (opts.repo or "main")
 distroversion = (opts.release or "v3.4")

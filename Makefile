@@ -14,6 +14,7 @@ repo=$(notdir $(basename $@))
 $(rel)/%.yaml:
 	$(LUA) secfixes.lua --repo $(repo) --release $(rel) \
 		$(aports)/$(repo)/*/APKBUILD > $@.tmp \
+		&& $(LUA) secfixes.lua --verify $@.tmp \
 		&& mv $@.tmp $@
 
 clean:
