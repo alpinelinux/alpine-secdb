@@ -60,6 +60,7 @@ packages:
   - pkg:
       name: shadow
       secfixes:
+        4.2.1-r7:
           - CVE-2016-6252
           - CVE-2017-2616
   - pkg:
