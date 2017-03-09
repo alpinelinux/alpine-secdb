@@ -291,6 +291,11 @@ packages:
         - CVE-2017-3317
         - CVE-2017-3318
   - pkg:
+      name: musl
+      secfixes:
+        1.1.14-r13:
+          - CVE-2016-8859
+  - pkg:
       name: openjpeg
       secfixes:
         2.1.2-r1:
