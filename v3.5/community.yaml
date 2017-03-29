@@ -23,6 +23,17 @@ packages:
         - CVE-2017-5390
         - CVE-2017-5396
   - pkg:
+      name: gtk-vnc
+      secfixes:
+        0.7.0-r0:
+        - CVE-2017-5884
+        - CVE-2017-5885
+  - pkg:
+      name: mbedtls
+      secfixes:
+        2.4.2-r0:
+        - CVE-2017-2784
+  - pkg:
       name: neovim
       secfixes:
         0.1.6-r1:
