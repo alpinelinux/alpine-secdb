@@ -238,10 +238,20 @@ packages:
           - CVE-2016-10033
           - CVE-2016-10045
   - pkg:
+      name: pidgin
+      secfixes:
+        2.11.0-r1:
+        - CVE-2017-2640
+  - pkg:
       name: postfixadmin
       secfixes:
         3.0.2-r0:
         - CVE-2017-5930
+  - pkg:
+      name: putty
+      secfixes:
+        0.68-r0:
+        - CVE-2017-6542
   - pkg:
       name: py-django
       secfixes:
