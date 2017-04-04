@@ -34,10 +34,31 @@ packages:
         2.4.2-r0:
         - CVE-2017-2784
   - pkg:
+      name: munin
+      secfixes:
+        2.0.33-r0:
+        - CVE-2017-6188
+  - pkg:
       name: neovim
       secfixes:
         0.1.6-r1:
           - CVE-2016-1248
+  - pkg:
+      name: pdns-recursor
+      secfixes:
+        4.0.4-r0:
+        - CVE-2016-7068
+        - CVE-2016-7073
+        - CVE-2016-7074
+  - pkg:
+      name: pdns
+      secfixes:
+        4.0.3-r0:
+        - CVE-2016-2120
+        - CVE-2016-7068
+        - CVE-2016-7072
+        - CVE-2016-7073
+        - CVE-2016-7074
   - pkg:
       name: phpmyadmin
       secfixes:
