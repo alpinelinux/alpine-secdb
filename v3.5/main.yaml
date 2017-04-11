@@ -256,8 +256,11 @@ packages:
       name: py-django
       secfixes:
         1.8.16-r0:
-        - CVE-2016-9013
-        - CVE-2016-9014
+          - CVE-2016-9013
+          - CVE-2016-9014
+        1.8.18-r0:
+          - CVE-2017-7233
+          - CVE-2017-7234
   - pkg:
       name: quagga
       secfixes:
@@ -344,6 +347,11 @@ packages:
         - CVE-2016-10171
         - CVE-2016-10172
   - pkg:
+      name: wget
+      secfixes:
+        1.19.1-r1:
+        - CVE-2017-6508
+  - pkg:
       name: wireshark
       secfixes:
         2.2.5-r0:
@@ -408,6 +416,9 @@ packages:
           - CVE-2017-2615 XSA-208
           - CVE-2017-2620 XSA-209
           - XSA-210
+        4.7.2-r0:
+          - CVE-2016-9603 XSA-211
+          - CVE-2017-7228 XSA-212
   - pkg:
       name: zabbix
       secfixes:
