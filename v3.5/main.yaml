@@ -145,6 +145,8 @@ packages:
       secfixes:
         2.9.4-r1:
           - CVE-2016-5131
+        2.9.4-r2:
+          - CVE-2016-9318
   - pkg:
       name: libxslt
       secfixes:
