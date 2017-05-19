@@ -33,6 +33,11 @@ packages:
           - CVE-2016-9147
           - CVE-2016-9444
   - pkg:
+      name: binutils
+      secfixes:
+        2.26-r1:
+        - CVE-2017-7614
+  - pkg:
       name: busybox
       secfixes:
         1.24.2-r12:
@@ -58,11 +63,12 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.52.1-r2:
+          - CVE-2017-7468
+          - CVE-2017-7407
+          - CVE-2017-2629
         7.52.1-r0:
           - CVE-2016-9594
-          - CVE-2016-9586
-          - CVE-2016-9952
-          - CVE-2016-9953
         7.51.0-r0:
           - CVE-2016-8615
           - CVE-2016-8616
@@ -136,11 +142,54 @@ packages:
           - CVE-2016-6214
         2.2.3-r1:
           - CVE-2016-7568
+        2.2.4-r0:
+          - CVE-2016-6906
+          - CVE-2016-9317
+          - CVE-2016-6912
+          - CVE-2016-10166
+          - CVE-2016-10167
+          - CVE-2016-10168
   - pkg:
       name: giflib
       secfixes:
         5.1.4-r0:
           - CVE-2016-3977
+  - pkg:
+      name: gst-plugins-bad1
+      secfixes:
+        1.8.3-r0:
+          - CVE-2016-9809
+          - CVE-2016-9812
+          - CVE-2016-9813
+          - CVE-2016-5843
+  - pkg:
+      name: gst-plugins-base1
+      secfixes:
+        1.8.3-r0:
+          - CVE-2016-9811
+          - CVE-2017-5837
+          - CVE-2017-5839
+          - CVE-2017-5842
+          - CVE-2017-5844
+  - pkg:
+      name: gst-plugins-good1
+      secfixes:
+        1.8.3-r0:
+        - CVE-2016-9634
+        - CVE-2016-9635
+        - CVE-2016-9636
+        - CVE-2016-9808
+        - CVE-2016-10198
+        - CVE-2016-10199
+        - CVE-2017-5840
+        - CVE-2017-5841
+        - CVE-2017-5845
+  - pkg:
+      name: gst-plugins-ugly1
+      secfixes:
+        1.8.3-r0:
+        - CVE-2017-5846
+        - CVE-2017-5847
   - pkg:
       name: guile
       secfixes:
@@ -154,6 +203,9 @@ packages:
           - CVE-2016-6293
         57-1-r2:
           - CVE-2016-7415
+        57.1-r3:
+          - CVE-2017-7867
+          - CVE-2017-7868
   - pkg:
       name: imagemagick
       secfixes:
@@ -271,25 +323,40 @@ packages:
           - CVE-2016-9941
           - CVE-2016-9942
   - pkg:
+      name: libxml2
+      secfixes:
+        2.9.4-r1:
+          - CVE-2016-5131
+        2.9.4-r2:
+          - CVE-2016-9318
+  - pkg:
       name: libxpm
       secfixes:
         3.5.12-r0:
         - CVE-2016-10164
   - pkg:
+      name: libxslt
+      secfixes:
+        1.1.29-r1:
+        - CVE-2017-5029
+  - pkg:
       name: mariadb
       secfixes:
+        10.1.22-r0:
+          - CVE-2017-3313
+          - CVE-2017-3302
         10.1.21-r0:
-        - CVE-2016-6664
-        - CVE-2017-3238
-        - CVE-2017-3243
-        - CVE-2017-3244
-        - CVE-2017-3257
-        - CVE-2017-3258
-        - CVE-2017-3265
-        - CVE-2017-3291
-        - CVE-2017-3312
-        - CVE-2017-3317
-        - CVE-2017-3318
+          - CVE-2016-6664
+          - CVE-2017-3238
+          - CVE-2017-3243
+          - CVE-2017-3244
+          - CVE-2017-3257
+          - CVE-2017-3258
+          - CVE-2017-3265
+          - CVE-2017-3291
+          - CVE-2017-3312
+          - CVE-2017-3317
+          - CVE-2017-3318
   - pkg:
       name: musl
       secfixes:
@@ -381,6 +448,11 @@ packages:
           - CVE-2016-9865
           - CVE-2016-9866
   - pkg:
+      name: pidgin
+      secfixes:
+        2.11.0-r1:
+          - CVE-2017-2640
+  - pkg:
       name: postfixadmin
       secfixes:
         3.0.2-r0:
@@ -389,11 +461,21 @@ packages:
       name: py-django
       secfixes:
         1.8.16-r0:
-        - CVE-2016-9013
-        - CVE-2016-9014
+          - CVE-2016-9013
+          - CVE-2016-9014
+        1.8.18-r0:
+          - CVE-2017-7233
+          - CVE-2017-7234
+  - pkg:
+      name: roundcubemail
+      secfixes:
+        1.2.5-r0:
+        - CVE-2017-8114
   - pkg:
       name: samba
       secfixes:
+        4.4.5-r3:
+          - CVE-2017-2619
         4.4.5-r2:
           - CVE-2016-2123
           - CVE-2016-2125
@@ -457,6 +539,15 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.7-r2:
+          - CVE-2017-7592
+          - CVE-2017-7593
+          - CVE-2017-7594
+          - CVE-2017-7595
+          - CVE-2017-7596
+          - CVE-2017-7598
+          - CVE-2017-7601
+          - CVE-2017-7602
         4.0.7-r1:
           - CVE-2017-5225
         4.0.7-r0:
@@ -497,25 +588,17 @@ packages:
         - CVE-2016-10171
         - CVE-2016-10172
   - pkg:
+      name: weechat
+      secfixes:
+        1.5-r2:
+        - CVE-2017-8073.patch
+  - pkg:
       name: wget
       secfixes:
+        1.18-r1:
+          - CVE-2017-6508
         1.17.1-r1:
           - CVE-2016-4971
-  - pkg:
-      name: wireshark
-      secfixes:
-        2.0.10-r0:
-        - CVE-2017-5596
-        - CVE-2017-5597
-        2.0.5-r0:
-        - CVE-2016-6505
-        - CVE-2016-6506
-        - CVE-2016-6508
-        - CVE-2016-6509
-        - CVE-2016-6510
-        - CVE-2016-6511
-        - CVE-2016-6512
-        - CVE-2016-6513
   - pkg:
       name: wpa_supplicant
       secfixes:
@@ -545,6 +628,9 @@ packages:
           - CVE-2016-10024 XSA-202
           - CVE-2016-10025 XSA-203
           - CVE-2016-10013 XSA-204
+        4.6.3-r8:
+          - CVE-2016-9603 XSA-211
+          - CVE-2017-7228 XSA-212
   - pkg:
       name: zabbix
       secfixes:
