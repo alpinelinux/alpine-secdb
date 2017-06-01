@@ -44,6 +44,11 @@ packages:
         0.1.6-r1:
           - CVE-2016-1248
   - pkg:
+      name: pcmanfm
+      secfixes:
+        1.2.5-r1:
+          - CVE-2017-8934
+  - pkg:
       name: pdns-recursor
       secfixes:
         4.0.4-r0:
