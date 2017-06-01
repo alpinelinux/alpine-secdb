@@ -49,6 +49,7 @@ function verify_yaml(file)
 	local data = yaml.load(f:read("*all"))
 	for _,p in pairs(data.packages) do
 		assert(type(p.pkg.name) == "string")
+		assert(type(p.pkg.secfixes) == "table", file..": "..p.pkg.name..": secfixes is not a table")
 		for k,v in pairs(p.pkg.secfixes) do
 			assert(type(k) == "string", file..": "..p.pkg.name..": not a string: "..tostring(k))
 			assert(string.match(k, "^[0-9]+"))
