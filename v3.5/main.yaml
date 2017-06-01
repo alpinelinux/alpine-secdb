@@ -22,12 +22,21 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.10.4_p8-r0:
+          - CVE-2017-3136
+          - CVE-2017-3137
+          - CVE-2017-3138
         9.10.4_p6-r0:
           - CVE-2017-3135
         9.10.4_p5-r0:
           - CVE-2016-9131
           - CVE-2016-9147
           - CVE-2016-9444
+  - pkg:
+      name: binutils
+      secfixes:
+        2.27-r1:
+        - CVE-2017-7614
   - pkg:
       name: bzip2
       secfixes:
@@ -41,11 +50,14 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.52.1-r3:
+          - CVE-2017-7468
+          - CVE-2017-7407
         7.52.1-r2:
           - CVE-2017-2629
-        7.52.1:
+        7.52.1-r0:
           - CVE-2016-9594
-        7.51.0:
+        7.51.0-r0:
           - CVE-2016-8615
           - CVE-2016-8616
           - CVE-2016-8617
@@ -57,15 +69,15 @@ packages:
           - CVE-2016-8623
           - CVE-2016-8624
           - CVE-2016-8625
-        7.50.3:
+        7.50.3-r0:
           - CVE-2016-7167
-        7.50.2:
+        7.50.2-r0:
           - CVE-2016-7141
-        7.50.1:
+        7.50.1-r0:
           - CVE-2016-5419
           - CVE-2016-5420
           - CVE-2016-5421
-        7.36.0:
+        7.36.0-r0:
           - CVE-2014-0138
           - CVE-2014-0139
   - pkg:
@@ -80,12 +92,74 @@ packages:
         - CVE-2017-5024
         - CVE-2017-5025
   - pkg:
+      name: freetype
+      secfixes:
+        2.7-r1:
+          - CVE-2017-8105
+          - CVE-2017-8287
+  - pkg:
+      name: gd
+      secfixes:
+        2.2.4-r0:
+          - CVE-2016-6906
+          - CVE-2016-9317
+          - CVE-2016-6912
+          - CVE-2016-10166
+          - CVE-2016-10167
+          - CVE-2016-10168
+  - pkg:
+      name: ghostscript
+      secfixes:
+        9.21-r0:
+          - CVE-2017-8291
+          - CVE-2017-7207
+          - CVE-2017-5951
+  - pkg:
+      name: gst-plugins-bad1
+      secfixes:
+        1.8.3-r0:
+          - CVE-2016-9809
+          - CVE-2016-9812
+          - CVE-2016-9813
+          - CVE-2016-5843
+  - pkg:
+      name: gst-plugins-base1
+      secfixes:
+        1.8.3-r0:
+          - CVE-2016-9811
+          - CVE-2017-5837
+          - CVE-2017-5839
+          - CVE-2017-5842
+          - CVE-2017-5844
+  - pkg:
+      name: gst-plugins-good1
+      secfixes:
+        1.8.3-r0:
+        - CVE-2016-9634
+        - CVE-2016-9635
+        - CVE-2016-9636
+        - CVE-2016-9808
+        - CVE-2016-10198
+        - CVE-2016-10199
+        - CVE-2017-5840
+        - CVE-2017-5841
+        - CVE-2017-5845
+  - pkg:
+      name: gst-plugins-ugly1
+      secfixes:
+        1.8.3-r0:
+        - CVE-2017-5846
+        - CVE-2017-5847
+  - pkg:
       name: icu
       secfixes:
         57.1-r1:
           - CVE-2016-6293
         57.1-r2:
           - CVE-2016-7415
+        57.1-r3:
+          - CVE-2017-7867
+          - CVE-2017-7868
   - pkg:
       name: lcms2
       secfixes:
@@ -135,6 +209,18 @@ packages:
         -  CVE-2016-6262
         -  CVE-2016-6263
   - pkg:
+      name: libsndfile
+      secfixes:
+        1.0.28-r0:
+          - CVE-2017-7585
+          - CVE-2017-7741
+          - CVE-2017-7742
+  - pkg:
+      name: libtasn1
+      secfixes:
+        4.9-r1:
+          - CVE-2017-6891
+  - pkg:
       name: libvncserver
       secfixes:
         0.9.10-r2:
@@ -180,10 +266,12 @@ packages:
   - pkg:
       name: mupdf
       secfixes:
+        1.10a-r3:
+          - CVE-2017-6060
         1.10a-r2:
-        - CVE-2017-5991
+          - CVE-2017-5991
         1.10a-r1:
-        - CVE-2017-5896
+          - CVE-2017-5896
   - pkg:
       name: musl
       secfixes:
@@ -269,6 +357,11 @@ packages:
         1.1.1-r0:
           - CVE-2017-5495
   - pkg:
+      name: roundcubemail
+      secfixes:
+        1.2.5-r0:
+        - CVE-2017-8114
+  - pkg:
       name: samba
       secfixes:
         4.5.7-r0:
@@ -331,6 +424,15 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.7-r2:
+          - CVE-2017-7592
+          - CVE-2017-7593
+          - CVE-2017-7594
+          - CVE-2017-7595
+          - CVE-2017-7596
+          - CVE-2017-7598
+          - CVE-2017-7601
+          - CVE-2017-7602
         4.0.7-r1:
           - CVE-2017-5225
   - pkg:
@@ -349,6 +451,11 @@ packages:
         - CVE-2016-10171
         - CVE-2016-10172
   - pkg:
+      name: weechat
+      secfixes:
+        1.6.0-r1:
+        - CVE-2017-8073.patch
+  - pkg:
       name: wget
       secfixes:
         1.19.1-r1:
@@ -356,29 +463,40 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        2.2.6-r0:
+          - CVE-2017-7700
+          - CVE-2017-7701
+          - CVE-2017-7702
+          - CVE-2017-7703
+          - CVE-2017-7704
+          - CVE-2017-7705
+          - wnpa-sec-2017-18
+          - wnpa-sec-2017-19
+          - wnpa-sec-2017-20
+          - wnpa-sec-2017-21
         2.2.5-r0:
-        - CVE-2017-6467
-        - CVE-2017-6468
-        - CVE-2017-6469
-        - CVE-2017-6470
-        - CVE-2017-6471
-        - CVE-2017-6472
-        - CVE-2017-6473
-        - CVE-2017-6474
+          - CVE-2017-6467
+          - CVE-2017-6468
+          - CVE-2017-6469
+          - CVE-2017-6470
+          - CVE-2017-6471
+          - CVE-2017-6472
+          - CVE-2017-6473
+          - CVE-2017-6474
         2.2.4-r1:
-        - CVE-2017-6014
+          - CVE-2017-6014
         2.2.4-r0:
-        - CVE-2017-5596
-        - CVE-2017-5597
+          - CVE-2017-5596
+          - CVE-2017-5597
         2.0.5-r0:
-        - CVE-2016-6505
-        - CVE-2016-6506
-        - CVE-2016-6508
-        - CVE-2016-6509
-        - CVE-2016-6510
-        - CVE-2016-6511
-        - CVE-2016-6512
-        - CVE-2016-6513
+          - CVE-2016-6505
+          - CVE-2016-6506
+          - CVE-2016-6508
+          - CVE-2016-6509
+          - CVE-2016-6510
+          - CVE-2016-6511
+          - CVE-2016-6512
+          - CVE-2016-6513
   - pkg:
       name: xen
       secfixes:
@@ -426,3 +544,11 @@ packages:
       secfixes:
         3.0.4-r0:
         - CVE-2016-10134 ZBX-11023
+  - pkg:
+      name: zlib
+      secfixes:
+        1.2.11-r0:
+          - CVE-2016-9840
+          - CVE-2016-9841
+          - CVE-2016-9842
+          - CVE-2016-9843
