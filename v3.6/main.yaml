@@ -30,7 +30,8 @@ packages:
   - pkg:
       name: bzip2
       secfixes:
-        1.0.6-r5: CVE-2016-3189
+        1.0.6-r5:
+        - CVE-2016-3189
   - pkg:
       name: ctags
       secfixes:
@@ -224,6 +225,11 @@ packages:
           - CVE-2017-3312
           - CVE-2017-3317
           - CVE-2017-3318
+  - pkg:
+      name: mosquitto
+      secfixes:
+        1.4.12-r0:
+        - CVE-2017-7650
   - pkg:
       name: mupdf
       secfixes:
