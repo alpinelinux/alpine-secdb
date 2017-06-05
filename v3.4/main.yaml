@@ -150,6 +150,13 @@ packages:
           - CVE-2016-10167
           - CVE-2016-10168
   - pkg:
+      name: ghostscript
+      secfixes:
+        9.21-r0:
+          - CVE-2017-8291
+          - CVE-2017-7207
+          - CVE-2017-5951
+  - pkg:
       name: giflib
       secfixes:
         5.1.4-r0:
@@ -312,10 +319,22 @@ packages:
         -  CVE-2016-6262
         -  CVE-2016-6263
   - pkg:
+      name: libsndfile
+      secfixes:
+        1.0.28-r0:
+        - CVE-2017-7585
+        - CVE-2017-7741
+        - CVE-2017-7742
+  - pkg:
       name: libssh2
       secfixes:
         1.7.0-r0:
           - CVE-2016-0787
+  - pkg:
+      name: libtasn1
+      secfixes:
+        4.8-r1:
+          - CVE-2017-6891
   - pkg:
       name: libvncserver
       secfixes:
@@ -474,6 +493,8 @@ packages:
   - pkg:
       name: samba
       secfixes:
+        4.4.14-r0:
+          - CVE-2017-7494
         4.4.5-r3:
           - CVE-2017-2619
         4.4.5-r2:
@@ -636,3 +657,11 @@ packages:
       secfixes:
         3.0.4-r0:
         - ZBX-11023
+  - pkg:
+      name: zlib
+      secfixes:
+        1.2.11-r0:
+          - CVE-2016-9840
+          - CVE-2016-9841
+          - CVE-2016-9842
+          - CVE-2016-9843
