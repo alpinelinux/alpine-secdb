@@ -90,10 +90,22 @@ packages:
           - CVE-2017-8105
           - CVE-2017-8287
   - pkg:
+      name: gdk-pixbuf
+      secfixes:
+        2.36.6-r1:
+          - CVE-2017-6311
+          - CVE-2017-6312
+          - CVE-2017-6314
+  - pkg:
       name: ghostscript
       secfixes:
         9.21-r2:
           - CVE-2017-8291
+  - pkg:
+      name: gnutls
+      secfixes:
+        3.5.13-r0:
+          - CVE-2017-7507
   - pkg:
       name: gst-plugins-good1
       secfixes:
@@ -123,6 +135,12 @@ packages:
         58.2-r2:
           - CVE-2017-7867
           - CVE-2017-7868
+  - pkg:
+      name: irssi
+      secfixes:
+        1.0.3-r0:
+          - CVE-2017-9468
+          - CVE-2017-9469
   - pkg:
       name: lcms2
       secfixes:
@@ -202,6 +220,8 @@ packages:
           - CVE-2016-5131
         2.9.4-r2:
           - CVE-2016-9318
+        2.9.4-r4:
+          - CVE-2017-5969
   - pkg:
       name: libxslt
       secfixes:
@@ -290,6 +310,12 @@ packages:
           - CVE-2016-6304
           - CVE-2016-6306
   - pkg:
+      name: openvpn
+      secfixes:
+        2.4.2-r0:
+          - CVE-2017-7478
+          - CVE-2017-7479
+  - pkg:
       name: p7zip
       secfixes:
         16.02-r1:
@@ -299,6 +325,13 @@ packages:
       secfixes:
         8.40-r2:
         - CVE-2017-7186.patch
+  - pkg:
+      name: postgresql
+      secfixes:
+        9.6.3-r0:
+        - CVE-2017-7484
+        - CVE-2017-7485
+        - CVE-2017-7486
   - pkg:
       name: py-django
       secfixes:
@@ -348,6 +381,12 @@ packages:
         4.6.1-r0:
           - CVE-2017-2619
   - pkg:
+      name: strongswan
+      secfixes:
+        5.5.3-r0:
+          - CVE-2017-9022
+          - CVE-2017-9023
+  - pkg:
       name: tar
       secfixes:
         1.29-r1:
@@ -379,6 +418,11 @@ packages:
           - CVE-2017-5953
         8.0.0056-r0:
           - CVE-2016-1248
+  - pkg:
+      name: vte
+      secfixes:
+        0.28.2-r12:
+        - CVE-2012-2738
   - pkg:
       name: wavpack
       secfixes:
