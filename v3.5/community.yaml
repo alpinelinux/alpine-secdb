@@ -29,6 +29,12 @@ packages:
         - CVE-2017-5884
         - CVE-2017-5885
   - pkg:
+      name: libreoffice
+      secfixes:
+        5.2.7.2-r0:
+          - CVE-2017-7870
+          - CVE-2016-10327
+  - pkg:
       name: mbedtls
       secfixes:
         2.4.2-r0:
@@ -64,6 +70,15 @@ packages:
         - CVE-2016-7072
         - CVE-2016-7073
         - CVE-2016-7074
+  - pkg:
+      name: php7
+      secfixes:
+        7.0.21-r0:
+          - CVE-2017-9224
+          - CVE-2017-9226
+          - CVE-2017-9227
+          - CVE-2017-9228
+          - CVE-2017-9229
   - pkg:
       name: phpmyadmin
       secfixes:
