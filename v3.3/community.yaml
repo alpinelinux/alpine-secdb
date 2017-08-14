@@ -1,0 +1,10 @@
+---
+distroversion: v3.3
+reponame: community
+archs:
+  - x86_64
+  - x86
+  - armhf
+urlprefix: http://dl-cdn.alpinelinux.org/alpine
+apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
+packages:
