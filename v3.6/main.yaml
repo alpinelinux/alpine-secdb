@@ -256,6 +256,11 @@ packages:
         - CVE-2017-8363
         - CVE-2017-8365
   - pkg:
+      name: libsoup
+      secfixes:
+        2.58.2-r0:
+          - CVE-2017-2885
+  - pkg:
       name: libtasn1
       secfixes:
         4.10-r1:
@@ -416,6 +421,10 @@ packages:
   - pkg:
       name: postgresql
       secfixes:
+        9.6.4-r0:
+        - CVE-2017-7546
+        - CVE-2017-7547
+        - CVE-2017-7548
         9.6.3-r0:
         - CVE-2017-7484
         - CVE-2017-7485
