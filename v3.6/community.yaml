@@ -20,11 +20,21 @@ packages:
           - CVE-2016-6830
           - CVE-2016-6831
   - pkg:
+      name: exim
+      secfixes:
+        4.89-r5:
+        - CVE-2017-1000369
+  - pkg:
       name: gtk-vnc
       secfixes:
         0.7.0-r0:
         - CVE-2017-5884
         - CVE-2017-5885
+  - pkg:
+      name: knot
+      secfixes:
+        2.4.5-r0:
+          - CVE-2017-11104
   - pkg:
       name: mbedtls
       secfixes:
@@ -39,13 +49,26 @@ packages:
           - CVE-2017-5953
           - CVE-2017-6349
           - CVE-2017-6350
+  - pkg:
+      name: nodejs-current
+      secfixes:
+        7.10.1-r0:
+          - CVE-2017-1000381
 #
-      TODO: Try to trim the base package to include only common syntax files etc.
   - pkg:
       name: pcmanfm
       secfixes:
         1.2.5-r1:
           - CVE-2017-8934
+  - pkg:
+      name: php5
+      secfixes:
+        5.6.31-r0:
+          - CVE-2017-9224
+          - CVE-2017-9226
+          - CVE-2017-9227
+          - CVE-2017-9228
+          - CVE-2017-9229
   - pkg:
       name: phpmyadmin
       secfixes:
@@ -117,6 +140,53 @@ packages:
         - CVE-2017-2369
         - CVE-2017-2371
         - CVE-2017-2373
+  - pkg:
+      name: wireshark
+      secfixes:
+        2.2.8-r0:
+          - CVE-2017-11406
+          - CVE-2017-11407
+          - CVE-2017-11408
+        2.2.7-r0:
+          - CVE-2017-9343
+          - CVE-2017-9344
+          - CVE-2017-9345
+          - CVE-2017-9346
+          - CVE-2017-9347
+          - CVE-2017-9348
+          - CVE-2017-9349
+          - CVE-2017-9350
+          - CVE-2017-9351
+          - CVE-2017-9352
+          - CVE-2017-9353
+          - CVE-2017-9354
+        2.2.6-r0:
+          - CVE-2017-7700
+          - CVE-2017-7701
+          - CVE-2017-7702
+          - CVE-2017-7703
+          - CVE-2017-7704
+          - CVE-2017-7705
+        2.2.5-r0:
+          - CVE-2017-6467
+          - CVE-2017-6468
+          - CVE-2017-6469
+          - CVE-2017-6470
+          - CVE-2017-6471
+          - CVE-2017-6472
+          - CVE-2017-6473
+          - CVE-2017-6474
+        2.2.4-r1:
+          - CVE-2017-6014
+        2.0.5-r0:
+          - CVE-2016-6505
+          - CVE-2016-6506
+          - CVE-2016-6508
+          - CVE-2016-6509
+          - CVE-2016-6510
+          - CVE-2016-6511
+          - CVE-2016-6512
+          - CVE-2016-6513
   - pkg:
       name: zoneminder
       secfixes:
