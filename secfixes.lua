@@ -52,7 +52,7 @@ function verify_yaml(file)
 		assert(type(p.pkg.secfixes) == "table", file..": "..p.pkg.name..": secfixes is not a table")
 		for k,v in pairs(p.pkg.secfixes) do
 			assert(type(k) == "string", file..": "..p.pkg.name..": not a string: "..tostring(k))
-			assert(string.match(k, "^[0-9]+"))
+			assert(string.match(k, "^[0-9]+"), p.pkg.name..": "..tostring(k))
 			assert(type(v) == "table", file..": "..p.pkg.name..": "..k..": not a table")
 		end
 	end
