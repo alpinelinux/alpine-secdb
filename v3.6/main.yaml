@@ -47,6 +47,13 @@ packages:
         1.0.6-r5:
         - CVE-2016-3189
   - pkg:
+      name: c-ares
+      secfixes:
+        1.12.0-r1:
+          - CVE-2017-1000381
+        1.12.0-r0:
+          - CVE-2016-5180
+  - pkg:
       name: ctags
       secfixes:
         5.8-r5:
@@ -416,8 +423,12 @@ packages:
   - pkg:
       name: pcre
       secfixes:
+        8.41-r0:
+        - CVE-2017-7244
+        - CVE-2017-7245
+        - CVE-2017-7246
         8.40-r2:
-        - CVE-2017-7186.patch
+        - CVE-2017-7186
   - pkg:
       name: postgresql
       secfixes:
@@ -490,6 +501,16 @@ packages:
         5.5.3-r0:
           - CVE-2017-9022
           - CVE-2017-9023
+  - pkg:
+      name: subversion
+      secfixes:
+        1.9.7-r0:
+          - CVE-2017-9800
+  - pkg:
+      name: supervisor
+      secfixes:
+        3.2.4-r0:
+          - CVE-2017-11610  
   - pkg:
       name: tar
       secfixes:
