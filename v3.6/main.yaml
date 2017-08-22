@@ -23,6 +23,11 @@ packages:
         2.4.27-r0:
           - CVE-2017-9789
   - pkg:
+      name: augeas
+      secfixes:
+        1.8.1-r0:
+        - CVE-2017-7555
+  - pkg:
       name: bind
       secfixes:
         9.11.1_p1-r1:
@@ -302,6 +307,16 @@ packages:
   - pkg:
       name: mariadb
       secfixes:
+        10.1.26-r0:
+          - CVE-2017-3636
+          - CVE-2017-3641
+          - CVE-2017-3653
+        10.1.23-r0:
+          - CVE-2017-3308
+          - CVE-2017-3309
+          - CVE-2017-3453
+          - CVE-2017-3456
+          - CVE-2017-3464
         10.1.22-r0:
           - CVE-2017-3313
           - CVE-2017-3302
@@ -322,6 +337,12 @@ packages:
       secfixes:
         1.4.36-r1:
           - CVE-2017-9951
+  - pkg:
+      name: mercurial
+      secfixes:
+        4.3.1-r0:
+        - CVE-2017-1000115
+        - CVE-2017-1000116
   - pkg:
       name: mosquitto
       secfixes:
