@@ -70,6 +70,11 @@ packages:
           - CVE-2017-9228
           - CVE-2017-9229
   - pkg:
+      name: phpldapadmin
+      secfixes:
+        1.2.3-r4:
+        - CVE-2017-11107
+  - pkg:
       name: phpmyadmin
       secfixes:
         4.6.5.2-r0:
