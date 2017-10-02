@@ -14,6 +14,8 @@ packages:
   - pkg:
       name: chicken
       secfixes:
+        4.12.0-r3:
+          - CVE-2017-6949
         4.12.0-r2:
           - CVE-2017-9334
         4.11.1-r0:
@@ -119,6 +121,19 @@ packages:
         1.2.5-r0:
         - CVE-2017-8114
   - pkg:
+      name: ruby2.2
+      secfixes:
+        2.2.8-r0:
+          - CVE-2017-0898
+          - CVE-2017-10784
+          - CVE-2017-14033
+          - CVE-2017-14064
+          - CVE-2017-0899
+          - CVE-2017-0900
+          - CVE-2017-0901
+          - CVE-2017-0902
+#
+  - pkg:
       name: shadow
       secfixes:
         4.2.1-r7:
@@ -201,3 +216,14 @@ packages:
         1.30.2-r3:
           - CVE-2017-5367
           - CVE-2017-5368
+  - pkg:
+      name: zziplib
+      secfixes:
+        0.13.67-r0:
+          - CVE-2017-5974
+          - CVE-2017-5975
+          - CVE-2017-5976
+          - CVE-2017-5977
+          - CVE-2017-5978
+          - CVE-2017-5979
+          - CVE-2017-5981

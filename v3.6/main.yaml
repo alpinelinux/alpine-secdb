@@ -14,6 +14,8 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.27-r1:
+          - CVE-2017-9798
         2.4.26-r0:
           - CVE-2017-3167
           - CVE-2017-3169
@@ -46,6 +48,11 @@ packages:
       secfixes:
         2.28-r1:
         - CVE-2017-7614
+  - pkg:
+      name: bluez
+      secfixes:
+        5.44-r3:
+          - CVE-2017-1000250
   - pkg:
       name: bzip2
       secfixes:
@@ -101,6 +108,17 @@ packages:
         7.36.0:
           - CVE-2014-0138
           - CVE-2014-0139
+  - pkg:
+      name: dnsmasq
+      secfixes:
+        2.76-r5:
+          - CVE-2017-14491
+          - CVE-2017-14492
+          - CVE-2017-14493
+          - CVE-2017-14494
+          - CVE-2017-14495
+          - CVE-2017-14496
+#
   - pkg:
       name: elfutils
       secfixes:
@@ -210,6 +228,11 @@ packages:
         2.8-r1:
         - CVE-2016-10165
   - pkg:
+      name: libarchive
+      secfixes:
+        3.3.1-r2:
+          - CVE-2017-14166
+  - pkg:
       name: libass
       secfixes:
         0.13.4-r0:
@@ -224,6 +247,11 @@ packages:
         - CVE-2016-10195
         - CVE-2016-10196
         - CVE-2016-10197
+  - pkg:
+      name: libgcrypt
+      secfixes:
+        1.7.9-r0:
+        - CVE-2017-0379
   - pkg:
       name: libgit2
       secfixes:
@@ -253,6 +281,12 @@ packages:
         0.5_alpha-r1:
           - CVE-2017-6419
           - CVE-2017-11423
+  - pkg:
+      name: libraw
+      secfixes:
+        0.17.2-r1:
+          - CVE-2017-6886
+          - CVE-2017-6887
   - pkg:
       name: libressl
       secfixes:
@@ -405,6 +439,12 @@ packages:
   - pkg:
       name: openjpeg
       secfixes:
+        2.2.0-r0:
+          - CVE-2017-14040
+          - CVE-2017-14041
+          - CVE-2017-14151
+          - CVE-2017-14152
+          - CVE-2017-14164
         2.1.2-r2:
           - CVE-2017-12982
         2.1.2-r1:
@@ -525,6 +565,19 @@ packages:
         1.1.1-r0:
           - CVE-2017-5495
   - pkg:
+      name: ruby
+      secfixes:
+        2.4.2-r0:
+          - CVE-2017-0898
+          - CVE-2017-10784
+          - CVE-2017-14033
+          - CVE-2017-14064
+          - CVE-2017-0899
+          - CVE-2017-0900
+          - CVE-2017-0901
+          - CVE-2017-0902
+#
+  - pkg:
       name: samba
       secfixes:
         4.6.4-r1:
@@ -536,6 +589,11 @@ packages:
       secfixes:
         0.13.3-r2:
           - CVE-2017-7506
+  - pkg:
+      name: sqlite
+      secfixes:
+        3.20.0:
+        - CVE-2017-10989
   - pkg:
       name: strongswan
       secfixes:
@@ -701,3 +759,22 @@ packages:
         4.8.1-r2:
           - CVE-2017-8903 XSA-213
           - CVE-2017-8904 XSA-214
+        4.8.2-r0:
+          - CVE-2017-10911 XSA-216
+          - CVE-2017-10912 XSA-217
+          - CVE-2017-10913 XSA-218
+          - CVE-2017-10914 XSA-218
+          - CVE-2017-10915 XSA-219
+          - CVE-2017-10916 XSA-220
+          - CVE-2017-10917 XSA-221
+          - CVE-2017-10918 XSA-222
+          - CVE-2017-10919 XSA-223
+          - CVE-2017-10920 XSA-224
+          - CVE-2017-10921 XSA-224
+          - CVE-2017-10922 XSA-224
+          - CVE-2017-10923 XSA-225
+          - CVE-2017-12135 XSA-226
+          - CVE-2017-12137 XSA-227
+          - CVE-2017-12136 XSA-228
+          - CVE-2017-12855 XSA-230
+          - XSA-235
