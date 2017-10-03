@@ -26,6 +26,13 @@ packages:
           - CVE-2017-7679
         2.4.27-r0:
           - CVE-2017-9789
+        2.4.27-r1:
+          - CVE-2017-9798
+  - pkg:
+      name: augeas
+      secfixes:
+        1.5.0-r1:
+        - CVE-2017-7555
   - pkg:
       name: bash
       secfixes:
@@ -49,6 +56,11 @@ packages:
         2.26-r1:
         - CVE-2017-7614
   - pkg:
+      name: bluez
+      secfixes:
+        5.40-r1:
+          - CVE-2017-1000250
+  - pkg:
       name: busybox
       secfixes:
         1.24.2-r12:
@@ -64,6 +76,8 @@ packages:
   - pkg:
       name: c-ares
       secfixes:
+        1.12.0-r1:
+          - CVE-2017-1000381
         1.12.0-r0:
           - CVE-2016-5180
   - pkg:
@@ -107,6 +121,17 @@ packages:
         7.36.0-r0:
           - CVE-2014-0138
           - CVE-2014-0139
+  - pkg:
+      name: dnsmasq
+      secfixes:
+        2.76-r1:
+          - CVE-2017-14491
+          - CVE-2017-14492
+          - CVE-2017-14493
+          - CVE-2017-14494
+          - CVE-2017-14495
+          - CVE-2017-14496
+#
   - pkg:
       name: dropbear
       secfixes:
@@ -343,6 +368,8 @@ packages:
          - CVE-2016-6250
        3.2.2-r0:
          - CVE-2017-5601
+       3.2.2-r1:
+         - CVE-2017-14166
   - pkg:
       name: libass
       secfixes:
@@ -368,6 +395,8 @@ packages:
       secfixes:
         1.7.0-r1:
         - CVE-2016-6313
+        1.7.9-r0:
+        - CVE-2017-0379
   - pkg:
       name: libgit2
       secfixes:
@@ -388,6 +417,18 @@ packages:
         -  CVE-2016-6261
         -  CVE-2016-6262
         -  CVE-2016-6263
+  - pkg:
+      name: libmspack
+      secfixes:
+        0.5_alpha-r1:
+          - CVE-2017-6419
+          - CVE-2017-11423
+  - pkg:
+      name: libraw
+      secfixes:
+        0.17.2-r1:
+          - CVE-2017-6886
+          - CVE-2017-6887
   - pkg:
       name: libsamplerate
       secfixes:
@@ -452,6 +493,16 @@ packages:
   - pkg:
       name: mariadb
       secfixes:
+        10.1.26-r0:
+          - CVE-2017-3636
+          - CVE-2017-3641
+          - CVE-2017-3653
+        10.1.23-r0:
+          - CVE-2017-3308
+          - CVE-2017-3309
+          - CVE-2017-3453
+          - CVE-2017-3456
+          - CVE-2017-3464
         10.1.22-r0:
           - CVE-2017-3313
           - CVE-2017-3302
@@ -472,6 +523,12 @@ packages:
       secfixes:
         1.4.33-r1:
           - CVE-2017-9951
+  - pkg:
+      name: mercurial
+      secfixes:
+        4.3.1-r0:
+        - CVE-2017-1000115
+        - CVE-2017-1000116
   - pkg:
       name: mosquitto
       secfixes:
@@ -495,6 +552,11 @@ packages:
           - CVE-2017-10684
           - CVE-2017-10685
   - pkg:
+      name: newsbeuter
+      secfixes:
+        2.9-r4:
+        - CVE-2017-12904
+  - pkg:
       name: nginx
       secfixes:
         1.10.3-r0:
@@ -507,8 +569,22 @@ packages:
           - CVE-2017-1000381
 #
   - pkg:
+      name: nss
+      secfixes:
+        3.23-r1:
+        - CVE-2017-5461
+        - CVE-2017-5462
+  - pkg:
       name: openjpeg
       secfixes:
+        2.2.0-r0:
+          - CVE-2017-14040
+          - CVE-2017-14041
+          - CVE-2017-14151
+          - CVE-2017-14152
+          - CVE-2017-14164
+        2.1.2-r2:
+          - CVE-2017-12982
         2.1.2-r1:
           - CVE-2016-9580
           - CVE-2016-9581
@@ -646,6 +722,19 @@ packages:
         1.2.5-r0:
         - CVE-2017-8114
   - pkg:
+      name: ruby
+      secfixes:
+        2.3.5-r0:
+          - CVE-2017-0898
+          - CVE-2017-10784
+          - CVE-2017-14033
+          - CVE-2017-14064
+          - CVE-2017-0899
+          - CVE-2017-0900
+          - CVE-2017-0901
+          - CVE-2017-0902
+#
+  - pkg:
       name: samba
       secfixes:
         4.4.14-r1:
@@ -664,6 +753,11 @@ packages:
         0.12.7-r1:
           - CVE-2017-7506
   - pkg:
+      name: sqlite
+      secfixes:
+        3.13.0-r1:
+        - CVE-2017-10989
+  - pkg:
       name: squid
       secfixes:
         3.5.23-r0:
@@ -680,6 +774,11 @@ packages:
       secfixes:
         1.9.7-r0:
           - CVE-2017-9800
+  - pkg:
+      name: supervisor
+      secfixes:
+        3.2.4-r0:
+          - CVE-2017-11610  
   - pkg:
       name: tar
       secfixes:
