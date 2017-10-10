@@ -88,6 +88,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.56.0-r0:
+          - CVE-2017-1000254
         7.55.0-r0:
           - CVE-2017-1000099
           - CVE-2017-1000100
@@ -542,6 +544,12 @@ packages:
       secfixes:
         16.02-r1:
         - CVE-2016-9296
+  - pkg:
+      name: perl
+      secfixes:
+        5.24.3-r0:
+        - CVE-2017-12837
+        - CVE-2017-12883
   - pkg:
       name: php5-phpmailer
       secfixes:
