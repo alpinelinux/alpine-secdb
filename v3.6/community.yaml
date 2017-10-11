@@ -43,6 +43,11 @@ packages:
         2.4.2-r0:
         - CVE-2017-2784
   - pkg:
+      name: miniupnpc
+      secfixes:
+        2.0-r1:
+          - CVE-2017-8798
+  - pkg:
       name: neovim
       secfixes:
         0.1.6-r1:
@@ -144,6 +149,11 @@ packages:
       secfixes:
         1.3-r3:
           - CVE-2016-6866
+  - pkg:
+      name: tor
+      secfixes:
+        0.3.0.8-r1:
+          - CVE-2017-0380
   - pkg:
       name: webkit2gtk
       secfixes:

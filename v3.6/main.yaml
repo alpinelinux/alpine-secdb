@@ -518,6 +518,11 @@ packages:
         5.24.3-r0:
         - CVE-2017-12837
         - CVE-2017-12883
+        5.24.3-r1:
+        - CVE-2016-9843
+        - CVE-2016-9841
+        - CVE-2016-9840
+        - CVE-2016-9842
   - pkg:
       name: postgresql
       secfixes:
