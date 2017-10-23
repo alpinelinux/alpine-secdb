@@ -19,6 +19,13 @@ packages:
           - CVE-2017-7679
         2.4.27-r0:
           - CVE-2017-9789
+        2.4.27-r1:
+          - CVE-2017-9798
+  - pkg:
+      name: augeas
+      secfixes:
+        1.4.0-r5:
+        - CVE-2017-7555
   - pkg:
       name: bash
       secfixes:
@@ -45,6 +52,11 @@ packages:
         9.10.4_p6-r0:
           - CVE-2017-3135
   - pkg:
+      name: bluez
+      secfixes:
+        5.36-r1:
+          - CVE-2017-1000250
+  - pkg:
       name: busybox
       secfixes:
         1.24.2-r1:
@@ -52,6 +64,8 @@ packages:
   - pkg:
       name: c-ares
       secfixes:
+        1.12.0-r1:
+          - CVE-2017-1000381
         1.12.0-r0:
           - CVE-2016-5180
   - pkg:
@@ -62,6 +76,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.55.0-r1:
+          - CVE-2017-1000254
         7.55.0-r0:
           - CVE-2017-1000099
           - CVE-2017-1000100
@@ -94,6 +110,23 @@ packages:
           - CVE-2016-5419
           - CVE-2016-5420
           - CVE-2016-5421
+  - pkg:
+      name: dnsmasq
+      secfixes:
+        2.76-r1:
+          - CVE-2017-14491
+          - CVE-2017-14492
+          - CVE-2017-14493
+          - CVE-2017-14494
+          - CVE-2017-14495
+          - CVE-2017-14496
+#
+  - pkg:
+      name: expat
+      secfixes:
+        2.2.0-r0:
+          - CVE-2012-6702
+          - CVE-2016-5300
   - pkg:
       name: ffmpeg
       secfixes:
@@ -130,6 +163,13 @@ packages:
   - pkg:
       name: gd
       secfixes:
+        2.2.4-r0:
+          - CVE-2016-6906
+          - CVE-2016-9317
+          - CVE-2016-6912
+          - CVE-2016-10166
+          - CVE-2016-10167
+          - CVE-2016-10168
         2.2.1-r2:
           - CVE-2015-8874
           - CVE-2016-3074
@@ -268,11 +308,20 @@ packages:
         -  CVE-2016-6262
         -  CVE-2016-6263
   - pkg:
+      name: libmspack
+      secfixes:
+        0.5_alpha-r1:
+          - CVE-2017-6419
+          - CVE-2017-11423
+  - pkg:
       name: libraw
       secfixes:
         0.17.1-r0:
           - CVE-2015-8366
           - CVE-2015-8367
+        0.17.2-r1:
+          - CVE-2017-6886
+          - CVE-2017-6887
   - pkg:
       name: libsamplerate
       secfixes:
@@ -386,6 +435,16 @@ packages:
   - pkg:
       name: mariadb
       secfixes:
+        10.1.26-r0:
+          - CVE-2017-3636
+          - CVE-2017-3641
+          - CVE-2017-3653
+        10.1.23-r0:
+          - CVE-2017-3308
+          - CVE-2017-3309
+          - CVE-2017-3453
+          - CVE-2017-3456
+          - CVE-2017-3464
         10.1.22-r0:
           - CVE-2017-3313
           - CVE-2017-3302
@@ -419,6 +478,12 @@ packages:
         1.4.33-r1:
           - CVE-2017-9951
   - pkg:
+      name: mercurial
+      secfixes:
+        4.3.1-r0:
+        - CVE-2017-1000115
+        - CVE-2017-1000116
+  - pkg:
       name: mosquitto
       secfixes:
         1.4.12-r0:
@@ -430,14 +495,50 @@ packages:
         - CVE-2017-9545
         - CVE-2017-11126
   - pkg:
+      name: musl
+      secfixes:
+        1.1.12-r6:
+          - CVE-2016-8859
+        1.1.12-r8:
+          - CVE-2017-15650
+  - pkg:
       name: ncurses
       secfixes:
+        6.0_p20170701-r0:
+          - CVE-2017-11112
+          - CVE-2017-11113
+          - CVE-2017-13728
+          - CVE-2017-13729
+          - CVE-2017-13730
+          - CVE-2017-13731
+          - CVE-2017-13732
+          - CVE-2017-13733
+          - CVE-2017-13734
         6.0-r7:
           - CVE-2017-10684
           - CVE-2017-10685
   - pkg:
+      name: newsbeuter
+      secfixes:
+        2.9-r4:
+        - CVE-2017-12904
+  - pkg:
+      name: nss
+      secfixes:
+        3.23-r1:
+        - CVE-2017-5461
+        - CVE-2017-5462
+  - pkg:
       name: openjpeg
       secfixes:
+        2.2.0-r0:
+          - CVE-2017-14040
+          - CVE-2017-14041
+          - CVE-2017-14151
+          - CVE-2017-14152
+          - CVE-2017-14164
+        2.1.2-r2:
+          - CVE-2017-12982
         2.1.2-r1:
           - CVE-2016-9580
           - CVE-2016-9581
@@ -489,6 +590,13 @@ packages:
           - CVE-2016-7055
           - CVE-2017-3731
           - CVE-2017-3732
+  - pkg:
+      name: perl
+      secfixes:
+        5.22.3-r0:
+        - CVE-2016-1238
+        - CVE-2017-12837
+        - CVE-2017-12883
   - pkg:
       name: php-phpmailer
       secfixes:
@@ -547,6 +655,19 @@ packages:
         1.1.9-r0:
         - CVE-2017-8114
   - pkg:
+      name: ruby
+      secfixes:
+        2.2.8-r0:
+          - CVE-2017-0898
+          - CVE-2017-10784
+          - CVE-2017-14033
+          - CVE-2017-14064
+          - CVE-2017-0899
+          - CVE-2017-0900
+          - CVE-2017-0901
+          - CVE-2017-0902
+#
+  - pkg:
       name: samba
       secfixes:
         4.2.14-r4:
@@ -565,6 +686,11 @@ packages:
         0.12.6-r2:
           - CVE-2017-7506
   - pkg:
+      name: sqlite
+      secfixes:
+        3.13.0-r1:
+        - CVE-2017-10989
+  - pkg:
       name: squid
       secfixes:
         3.5.23-r0:
@@ -573,6 +699,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.3.5-r4:
+          - CVE-2017-11185
         5.3.5-r2:
           - CVE-2017-9022
           - CVE-2017-9023
@@ -581,6 +709,11 @@ packages:
       secfixes:
         1.9.7-r0:
           - CVE-2017-9800
+  - pkg:
+      name: supervisor
+      secfixes:
+        3.1.4-r0:
+          - CVE-2017-11610  
   - pkg:
       name: tcpdump
       secfixes:
