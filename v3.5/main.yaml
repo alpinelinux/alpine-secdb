@@ -239,6 +239,19 @@ packages:
         1.6_rc2-r6:
           - CVE-2017-11103
   - pkg:
+      name: hostapd
+      secfixes:
+        2.6-r1:
+          - CVE-2017-13077
+          - CVE-2017-13078
+          - CVE-2017-13079
+          - CVE-2017-13080
+          - CVE-2017-13081
+          - CVE-2017-13082
+          - CVE-2017-13086
+          - CVE-2017-13087
+          - CVE-2017-13088
+  - pkg:
       name: icu
       secfixes:
         57.1-r1:
@@ -458,9 +471,21 @@ packages:
       secfixes:
         1.1.15-r4:
           - CVE-2016-8859
+        1.1.15-r8:
+          - CVE-2017-15650
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20170701-r0:
+          - CVE-2017-11112
+          - CVE-2017-11113
+          - CVE-2017-13728
+          - CVE-2017-13729
+          - CVE-2017-13730
+          - CVE-2017-13731
+          - CVE-2017-13732
+          - CVE-2017-13733
+          - CVE-2017-13734
         6.0-r8:
           - CVE-2017-10684
           - CVE-2017-10685
@@ -550,6 +575,11 @@ packages:
         5.24.3-r0:
         - CVE-2017-12837
         - CVE-2017-12883
+        5.24.3-r1:
+        - CVE-2016-9843
+        - CVE-2016-9841
+        - CVE-2016-9840
+        - CVE-2016-9842
   - pkg:
       name: php5-phpmailer
       secfixes:
@@ -671,6 +701,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.5.3-r1:
+          - CVE-2017-11185
         5.5.3-r0:
           - CVE-2017-9022
           - CVE-2017-9023
@@ -776,8 +808,10 @@ packages:
   - pkg:
       name: weechat
       secfixes:
+        1.6.0-r2:
+          - CVE-2017-14727
         1.6.0-r1:
-        - CVE-2017-8073.patch
+          - CVE-2017-8073.patch
   - pkg:
       name: wget
       secfixes:
@@ -786,6 +820,14 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        2.2.10-r0:
+          - CVE-2017-15191
+          - CVE-2017-15192
+          - CVE-2017-15193
+        2.2.9-r0:
+          - CVE-2017-13765
+          - CVE-2017-13766
+          - CVE-2017-13767
         2.2.8-r0:
           - CVE-2017-11406
           - CVE-2017-11407
@@ -837,6 +879,19 @@ packages:
           - CVE-2016-6511
           - CVE-2016-6512
           - CVE-2016-6513
+  - pkg:
+      name: wpa_supplicant
+      secfixes:
+        2.6-r2:
+          - CVE-2017-13077
+          - CVE-2017-13078
+          - CVE-2017-13079
+          - CVE-2017-13080
+          - CVE-2017-13081
+          - CVE-2017-13082
+          - CVE-2017-13086
+          - CVE-2017-13087
+          - CVE-2017-13088
   - pkg:
       name: xen
       secfixes:
