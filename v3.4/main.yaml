@@ -88,6 +88,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.55.0-r1:
+          - CVE-2017-1000254
         7.55.0-r0:
           - CVE-2017-1000099
           - CVE-2017-1000100
@@ -545,9 +547,21 @@ packages:
       secfixes:
         1.1.14-r13:
           - CVE-2016-8859
+        1.1.14-r16:
+          - CVE-2017-15650
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20170701-r0:
+          - CVE-2017-11112
+          - CVE-2017-11113
+          - CVE-2017-13728
+          - CVE-2017-13729
+          - CVE-2017-13730
+          - CVE-2017-13731
+          - CVE-2017-13732
+          - CVE-2017-13733
+          - CVE-2017-13734
         6.0-r8:
           - CVE-2017-10684
           - CVE-2017-10685
@@ -642,6 +656,13 @@ packages:
         8.38-r1:
           - CVE-2016-1283
           - CVE-2016-3191
+  - pkg:
+      name: perl
+      secfixes:
+        5.22.3-r0:
+        - CVE-2016-1238
+        - CVE-2017-12837
+        - CVE-2017-12883
   - pkg:
       name: php5-phpmailer
       secfixes:
@@ -766,6 +787,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.4.0-r3:
+          - CVE-2017-11185
         5.4.0-r2:
           - CVE-2017-9022
           - CVE-2017-9023
