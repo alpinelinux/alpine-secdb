@@ -191,6 +191,19 @@ packages:
         7.1.0-r1:
           - CVE-2017-11103
   - pkg:
+      name: hostapd
+      secfixes:
+        2.6-r2:
+          - CVE-2017-13077
+          - CVE-2017-13078
+          - CVE-2017-13079
+          - CVE-2017-13080
+          - CVE-2017-13081
+          - CVE-2017-13082
+          - CVE-2017-13086
+          - CVE-2017-13087
+          - CVE-2017-13088
+  - pkg:
       name: icu
       secfixes:
         57.1-r1:
@@ -415,12 +428,24 @@ packages:
       secfixes:
         1.1.15-r4:
           - CVE-2016-8859
+        1.1.16-r14:
+          - CVE-2017-15650
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20170930-r0:
+        - CVE-2017-11112
+        - CVE-2017-11113
+        - CVE-2017-13728
+        - CVE-2017-13729
+        - CVE-2017-13730
+        - CVE-2017-13731
+        - CVE-2017-13732
+        - CVE-2017-13733
+        - CVE-2017-13734
         6.0-r8:
-          - CVE-2017-10684
-          - CVE-2017-10685
+        - CVE-2017-10684
+        - CVE-2017-10685
   - pkg:
       name: newsbeuter
       secfixes:
@@ -610,6 +635,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.5.3-r1:
+          - CVE-2017-11185
         5.5.3-r0:
           - CVE-2017-9022
           - CVE-2017-9023
@@ -720,6 +747,8 @@ packages:
   - pkg:
       name: weechat
       secfixes:
+        1.7.1-r2:
+          - CVE-2017-14727
         1.7.1-r0:
         - CVE-2017-8073
   - pkg:
@@ -727,6 +756,19 @@ packages:
       secfixes:
         1.19.1-r1:
         - CVE-2017-6508
+  - pkg:
+      name: wpa_supplicant
+      secfixes:
+        2.6-r4:
+          - CVE-2017-13077
+          - CVE-2017-13078
+          - CVE-2017-13079
+          - CVE-2017-13080
+          - CVE-2017-13081
+          - CVE-2017-13082
+          - CVE-2017-13086
+          - CVE-2017-13087
+          - CVE-2017-13088
   - pkg:
       name: xen
       secfixes:
