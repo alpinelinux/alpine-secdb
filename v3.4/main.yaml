@@ -63,6 +63,9 @@ packages:
   - pkg:
       name: busybox
       secfixes:
+        1.24.2-r13:
+          - CVE-2017-15873
+          - CVE-2017-16544
         1.24.2-r12:
           - CVE-2016-6301
         1.24.2-r0:
@@ -88,6 +91,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.55.0-r2:
+          - CVE-2017-1000257
         7.55.0-r1:
           - CVE-2017-1000254
         7.55.0-r0:
@@ -209,6 +214,8 @@ packages:
   - pkg:
       name: gdk-pixbuf
       secfixes:
+        2.34.0-r2:
+          - CVE-2017-2862
         2.34.0-r1:
           - CVE-2017-6314
   - pkg:
@@ -568,8 +575,10 @@ packages:
   - pkg:
       name: newsbeuter
       secfixes:
+        2.9-r5:
+          - CVE-2017-14500
         2.9-r4:
-        - CVE-2017-12904
+          - CVE-2017-12904
   - pkg:
       name: nginx
       secfixes:
@@ -650,6 +659,9 @@ packages:
           - CVE-2016-7055
           - CVE-2017-3731
           - CVE-2017-3732
+        1.0.2m-r0:
+          - CVE-2017-3735
+          - CVE-2017-3736
   - pkg:
       name: pcre
       secfixes:
@@ -723,6 +735,9 @@ packages:
         - CVE-2017-7484
         - CVE-2017-7485
         - CVE-2017-7486
+        9.5.10-r0:
+        - CVE-2017-15098
+        - CVE-2017-15099
   - pkg:
       name: putty
       secfixes:
@@ -740,8 +755,10 @@ packages:
   - pkg:
       name: roundcubemail
       secfixes:
+        1.2.7-r0:
+          - CVE-2017-16651
         1.2.5-r0:
-        - CVE-2017-8114
+          - CVE-2017-8114
   - pkg:
       name: ruby
       secfixes:
@@ -758,6 +775,10 @@ packages:
   - pkg:
       name: samba
       secfixes:
+        4.4.16-r0:
+          - CVE-2017-12150
+          - CVE-2017-12151
+          - CVE-2017-12163
         4.4.14-r1:
           - CVE-2017-11103
         4.4.14-r0:
@@ -857,6 +878,9 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r0:
+          - CVE-2017-16231
+          - CVE-2017-16232
         4.0.8-r0:
           - CVE-2017-9936
           - CVE-2017-10688
@@ -896,8 +920,10 @@ packages:
   - pkg:
       name: varnish
       secfixes:
+        4.1.9-r0:
+        - CVE-2017-8807
         4.1.2-r4:
-          - CVE-2017-12425
+        - CVE-2017-12425
   - pkg:
       name: vim
       secfixes:
@@ -965,6 +991,29 @@ packages:
           - XSA-207
           - CVE-2017-2615 XSA-208
           - CVE-2017-2620 XSA-209
+        4.6.3-r11:
+          - CVE-2017-14316 XSA-231
+          - CVE-2017-14318 XSA-232
+          - CVE-2017-14317 XSA-233
+          - CVE-2017-14319 XSA-234
+        4.6.6-r0:
+          - CVE-2017-10911 XSA-216
+          - CVE-2017-10912 XSA-217
+          - CVE-2017-10913 XSA-218
+          - CVE-2017-10914 XSA-218
+          - CVE-2017-10915 XSA-219
+          - CVE-2017-10916 XSA-220
+          - CVE-2017-10917 XSA-221
+          - CVE-2017-10918 XSA-222
+          - CVE-2017-10919 XSA-223
+          - CVE-2017-10920 XSA-224
+          - CVE-2017-10921 XSA-224
+          - CVE-2017-10922 XSA-224
+          - CVE-2017-10923 XSA-225
+          - CVE-2017-12135 XSA-226
+          - CVE-2017-12137 XSA-227
+          - CVE-2017-12136 XSA-228
+          - CVE-2017-12855 XSA-230
   - pkg:
       name: yaml
       secfixes:
