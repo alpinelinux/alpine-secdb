@@ -79,6 +79,8 @@ packages:
           - CVE-2017-9227
           - CVE-2017-9228
           - CVE-2017-9229
+        7.0.25-r0:
+          - CVE-2016-1283
   - pkg:
       name: phpmyadmin
       secfixes:
