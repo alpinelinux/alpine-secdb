@@ -36,6 +36,16 @@ packages:
         4.89.1-r0:
           - CVE-2017-16944
   - pkg:
+      name: gimp
+      secfixes:
+        2.8.22-r2:
+          - CVE-2017-17784
+          - CVE-2017-17785
+          - CVE-2017-17786
+          - CVE-2017-17787
+          - CVE-2017-17788
+          - CVE-2017-17789
+  - pkg:
       name: gtk-vnc
       secfixes:
         0.7.0-r0:

@@ -23,6 +23,11 @@ packages:
           - CVE-2017-7668
           - CVE-2017-7679
   - pkg:
+      name: awstats
+      secfixes:
+        7.6-r2:
+          - CVE-2017-1000501
+  - pkg:
       name: bash
       secfixes:
         4.4.12-r1:
@@ -104,6 +109,11 @@ packages:
         7.36.0:
           - CVE-2014-0138
           - CVE-2014-0139
+  - pkg:
+      name: cyrus-sasl
+      secfixes:
+        2.1.26-r7:
+        - CVE-2013-4122
   - pkg:
       name: dnsmasq
       secfixes:
@@ -196,6 +206,8 @@ packages:
   - pkg:
       name: heimdal
       secfixes:
+        7.4.0-r2:
+          - CVE-2017-17439
         7.4.0-r0:
           - CVE-2017-11103
   - pkg:
@@ -313,6 +325,8 @@ packages:
   - pkg:
       name: libraw
       secfixes:
+        0.18.6-r0:
+          - CVE-2017-16910
         0.18.5-r0:
           - CVE-2017-13735
           - CVE-2017-14265
@@ -610,6 +624,13 @@ packages:
       secfixes:
         0.2.4-r0:
         - CVE-2017-8779
+  - pkg:
+      name: rsync
+      secfixes:
+        3.1.2-r7:
+          - CVE-2017-16548
+          - CVE-2017-17433
+          - CVE-2017-17434
   - pkg:
       name: ruby
       secfixes:
