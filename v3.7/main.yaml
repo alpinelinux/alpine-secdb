@@ -35,6 +35,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.11.2_p1-r0:
+          - CVE-2017-3145
         9.11.0_p5-r0:
           - CVE-2017-3136
           - CVE-2017-3137
@@ -68,6 +70,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.58.0-r0:
+          - CVE-2018-1000005
         7.57.0-r0:
           - CVE-2017-8816
           - CVE-2017-8817
@@ -248,6 +252,16 @@ packages:
           - CVE-2017-15723
           - CVE-2017-15227
           - CVE-2017-15228
+        1.0.6-r0:
+          - CVE-2018-5205
+          - CVE-2018-5206
+          - CVE-2018-5207
+          - CVE-2018-5208
+          - CVE-2018-7050
+          - CVE-2018-7051
+          - CVE-2018-7052
+          - CVE-2018-7053
+          - CVE-2018-7054
   - pkg:
       name: jasper
       secfixes:
@@ -452,8 +466,10 @@ packages:
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20171125-r0:
+          - CVE-2017-16879 
         6.0_p20170701-r0:
-        - CVE-2017-10684
+          - CVE-2017-10684
   - pkg:
       name: newsbeuter
       secfixes:
@@ -574,6 +590,9 @@ packages:
         10.1-r0:
         - CVE-2017-15098
         - CVE-2017-15099
+        10.2-r0:
+        - CVE-2018-1052
+        - CVE-2018-1053
   - pkg:
       name: py-django
       secfixes:
@@ -742,6 +761,8 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r1:
+          - CVE-2017-18013
         4.0.9-r0:
           - CVE-2017-16231
           - CVE-2017-16232
@@ -759,6 +780,11 @@ packages:
           - CVE-2017-7602
         4.0.7-r1:
           - CVE-2017-5225
+  - pkg:
+      name: uwsgi
+      secfixes:
+        2.0.16-r0:
+          - CVE-2018-6758
   - pkg:
       name: varnish
       secfixes:
@@ -905,6 +931,8 @@ packages:
           - XSA-249
           - XSA-250
           - XSA-251
+        4.9.1-r3:
+          - XSA-254 XPTI
   - pkg:
       name: xorg-server
       secfixes:
