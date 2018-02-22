@@ -774,6 +774,8 @@ packages:
   - pkg:
       name: sqlite
       secfixes:
+        3.20.1-r1:
+        - CVE-2017-15286
         3.20.0:
         - CVE-2017-10989
   - pkg:
@@ -1006,3 +1008,5 @@ packages:
           - CVE-2017-15592 XSA-243
           - CVE-2017-15594 XSA-244
           - CVE-2017-17046 XSA-245
+        4.8.2-r4:
+          - XSA-254 XPTI
