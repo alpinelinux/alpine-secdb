@@ -30,8 +30,15 @@ packages:
         1.8.1-r0:
         - CVE-2017-7555
   - pkg:
+      name: awstats
+      secfixes:
+        7.6-r1:
+          - CVE-2017-1000501
+  - pkg:
       name: bind
       secfixes:
+        9.11.2_p1-r0:
+          - CVE-2017-3145
         9.11.1_p1-r1:
           - CVE-2017-3142
           - CVE-2017-3143
@@ -74,6 +81,14 @@ packages:
         1.12.0-r0:
           - CVE-2016-5180
   - pkg:
+      name: collectd
+      secfixes:
+        5.6.2-r1:
+          - CVE-2017-7401
+          - CVE-2017-16820
+        5.5.2-r0:
+          - CVE-2016-6254
+  - pkg:
       name: ctags
       secfixes:
         5.8-r5:
@@ -81,6 +96,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.58.0-r0:
+          - CVE-2018-1000005
         7.57.0-r0:
           - CVE-2017-8816
           - CVE-2017-8817
@@ -188,6 +205,12 @@ packages:
           - CVE-2017-8105
           - CVE-2017-8287
   - pkg:
+      name: gd
+      secfixes:
+        2.2.5-r0:
+          - CVE-2017-6362
+          - CVE-2017-7890
+  - pkg:
       name: gdk-pixbuf
       secfixes:
         2.36.7-r0:
@@ -233,8 +256,11 @@ packages:
   - pkg:
       name: heimdal
       secfixes:
+        7.1.0-r2:
+          - CVE-2017-17439
         7.1.0-r1:
           - CVE-2017-11103
+        7.4.0-r0:
   - pkg:
       name: hostapd
       secfixes:
@@ -267,6 +293,21 @@ packages:
         1.0.4.-r0:
           - CVE-2017-10965
           - CVE-2017-10966
+        1.0.6-r0:
+          - CVE-2017-15721
+          - CVE-2017-15722
+          - CVE-2017-15723
+          - CVE-2017-15227
+          - CVE-2017-15228
+          - CVE-2018-5205
+          - CVE-2018-5206
+          - CVE-2018-5207
+          - CVE-2018-5208
+          - CVE-2018-7050
+          - CVE-2018-7051
+          - CVE-2018-7052
+          - CVE-2018-7053
+          - CVE-2018-7054
   - pkg:
       name: jasper
       secfixes:
@@ -414,6 +455,8 @@ packages:
           - CVE-2016-9318
         2.9.4-r4:
           - CVE-2017-5969
+        2.9.5-r0:
+          - CVE-2017-16931
   - pkg:
       name: libxslt
       secfixes:
@@ -493,19 +536,21 @@ packages:
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20171125-r0:
+          - CVE-2017-16879
         6.0_p20170930-r0:
-        - CVE-2017-11112
-        - CVE-2017-11113
-        - CVE-2017-13728
-        - CVE-2017-13729
-        - CVE-2017-13730
-        - CVE-2017-13731
-        - CVE-2017-13732
-        - CVE-2017-13733
-        - CVE-2017-13734
+          - CVE-2017-11112
+          - CVE-2017-11113
+          - CVE-2017-13728
+          - CVE-2017-13729
+          - CVE-2017-13730
+          - CVE-2017-13731
+          - CVE-2017-13732
+          - CVE-2017-13733
+          - CVE-2017-13734
         6.0-r8:
-        - CVE-2017-10684
-        - CVE-2017-10685
+          - CVE-2017-10684
+          - CVE-2017-10685
   - pkg:
       name: newsbeuter
       secfixes:
@@ -547,7 +592,9 @@ packages:
   - pkg:
       name: openssh
       secfixes:
-        7.4_p1:
+        7.5_p1-r2:
+          - CVE-2017-15906
+        7.4_p1-r0:
           - CVE-2016-10009
           - CVE-2016-10010
           - CVE-2016-10011
@@ -580,6 +627,9 @@ packages:
         1.0.2m-r0:
           - CVE-2017-3735
           - CVE-2017-3736
+        1.0.2n-r0:
+          - CVE-2017-3737
+          - CVE-2017-3738
   - pkg:
       name: openvpn
       secfixes:
@@ -628,6 +678,8 @@ packages:
         9.6.6-r0:
         - CVE-2017-15098
         - CVE-2017-15099
+        9.6.7-r0:
+        - CVE-2018-1053
   - pkg:
       name: py-django
       secfixes:
@@ -637,6 +689,13 @@ packages:
         1.10.7-r0:
           - CVE-2017-7233
           - CVE-2017-7234
+  - pkg:
+      name: python2
+      secfixes:
+        2.7.14-r0:
+        - CVE-2017-1000158
+        2.7.7-r0:
+        - CVE-2014-4616
   - pkg:
       name: qemu
       secfixes:
@@ -674,6 +733,14 @@ packages:
         1.1.1-r0:
         - CVE-2017-5495
   - pkg:
+      name: rsync
+      secfixes:
+        3.1.2-r6:
+          - CVE-2017-16548
+          - CVE-2017-17433
+          - CVE-2017-17434-1
+          - CVE-2017-17434-2
+  - pkg:
       name: ruby
       secfixes:
         2.4.2-r0:
@@ -685,6 +752,8 @@ packages:
           - CVE-2017-0900
           - CVE-2017-0901
           - CVE-2017-0902
+        2.4.3-r0:
+          - CVE-2017-17405
 #
   - pkg:
       name: samba
@@ -780,6 +849,8 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r1:
+          - CVE-2017-18013
         4.0.9-r0:
           - CVE-2017-16231
           - CVE-2017-16232
@@ -834,8 +905,11 @@ packages:
   - pkg:
       name: wget
       secfixes:
+        1.19.2-r0:
+          - CVE-2017-13089
+          - CVE-2017-13090
         1.19.1-r1:
-        - CVE-2017-6508
+          - CVE-2017-6508
   - pkg:
       name: wpa_supplicant
       secfixes:
@@ -912,9 +986,23 @@ packages:
           - CVE-2017-12137 XSA-227
           - CVE-2017-12136 XSA-228
           - CVE-2017-12855 XSA-230
-          - XSA-235
+          - CVE-2017-15596 XSA-235
         4.8.2-r1:
           - CVE-2017-14316 XSA-231
           - CVE-2017-14318 XSA-232
           - CVE-2017-14317 XSA-233
           - CVE-2017-14319 XSA-234
+        4.8.2-r2:
+          - CVE-2017-17044 XSA-246
+          - CVE-2017-17045 XSA-247
+        4.8.2-r3:
+          - CVE-2017-15597 XSA-236
+          - CVE-2017-15590 XSA-237
+          - XSA-238
+          - CVE-2017-15589 XSA-239
+          - CVE-2017-15595 XSA-240
+          - CVE-2017-15588 XSA-241
+          - CVE-2017-15593 XSA-242
+          - CVE-2017-15592 XSA-243
+          - CVE-2017-15594 XSA-244
+          - CVE-2017-17046 XSA-245
