@@ -568,7 +568,11 @@ packages:
       name: nodejs
       secfixes:
         6.10.3-r1:
-          - CVE-2017-1000381
+        - CVE-2017-1000381
+        6.10.0-r0:
+        - CVE-2016-5129
+        6.8.0-r0:
+        - CVE-2016-5180
 #
   - pkg:
       name: openjpeg
