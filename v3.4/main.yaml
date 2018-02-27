@@ -34,6 +34,11 @@ packages:
         1.5.0-r1:
         - CVE-2017-7555
   - pkg:
+      name: awstats
+      secfixes:
+        7.5-r2:
+          - CVE-2017-1000501
+  - pkg:
       name: bash
       secfixes:
         4.3.42-r5:
@@ -41,6 +46,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.10.6_p1-r0:
+          - CVE-2017-3145
         9.10.4_p8-r1:
           - CVE-2017-3142
           - CVE-2017-3143
@@ -91,6 +98,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.58.0-r0:
+          - CVE-2018-1000005
         7.57.0-r0:
           - CVE-2017-8816
           - CVE-2017-8817
@@ -242,6 +251,9 @@ packages:
           - CVE-2016-10166
           - CVE-2016-10167
           - CVE-2016-10168
+        2.2.5-r0:
+          - CVE-2017-6362
+          - CVE-2017-7890
   - pkg:
       name: gdk-pixbuf
       secfixes:
@@ -514,8 +526,16 @@ packages:
   - pkg:
       name: libvorbis
       secfixes:
+        1.3.5-r3:
+        - CVE-2017-14632
+        - CVE-2017-14633
         1.3.5-r2:
         - CVE-2017-14160
+  - pkg:
+      name: libxcursor
+      secfixes:
+        1.1.15-r0:
+        - CVE-2017-16612
   - pkg:
       name: libxml2
       secfixes:
@@ -525,6 +545,8 @@ packages:
           - CVE-2016-9318
         2.9.4-r3:
           - CVE-2017-5969
+        2.9.5-r0:
+          - CVE-2017-16931
   - pkg:
       name: libxpm
       secfixes:
@@ -595,6 +617,8 @@ packages:
   - pkg:
       name: ncurses
       secfixes:
+        6.0_p20171125-r0:
+          - CVE-2017-16879
         6.0_p20170701-r0:
           - CVE-2017-11112
           - CVE-2017-11113
@@ -664,6 +688,8 @@ packages:
           - CVE-2016-10010
           - CVE-2016-10011
           - CVE-2016-10012
+        7.2_p1-r2:
+          - CVE-2017-15906
   - pkg:
       name: openssl
       secfixes:
@@ -698,6 +724,9 @@ packages:
         1.0.2m-r0:
           - CVE-2017-3735
           - CVE-2017-3736
+        1.0.2n-r0:
+          - CVE-2017-3737
+          - CVE-2017-3738
   - pkg:
       name: pcre
       secfixes:
@@ -722,6 +751,9 @@ packages:
   - pkg:
       name: php5
       secfixes:
+        5.6.33-r0:
+          - CVE-2018-5711
+          - CVE-2018-5712
         5.6.31-r0:
           - CVE-2017-9224
           - CVE-2017-9226
@@ -776,6 +808,8 @@ packages:
         9.5.10-r0:
         - CVE-2017-15098
         - CVE-2017-15099
+        9.5.11-r0:
+        - CVE-2018-1053
   - pkg:
       name: putty
       secfixes:
@@ -791,6 +825,13 @@ packages:
           - CVE-2017-7233
           - CVE-2017-7234
   - pkg:
+      name: python
+      secfixes:
+        2.7.14-r0:
+        - CVE-2017-1000158
+        2.7.7-r0:
+        - CVE-2014-4616
+  - pkg:
       name: quagga
       secfixes:
         1.0.20161017-r1:
@@ -803,6 +844,14 @@ packages:
         1.2.5-r0:
           - CVE-2017-8114
   - pkg:
+      name: rsync
+      secfixes:
+        3.1.2-r3:
+          - CVE-2017-16548
+          - CVE-2017-17433
+          - CVE-2017-17434-1
+          - CVE-2017-17434-2
+  - pkg:
       name: ruby
       secfixes:
         2.3.5-r0:
@@ -814,6 +863,8 @@ packages:
           - CVE-2017-0900
           - CVE-2017-0901
           - CVE-2017-0902
+        2.3.6-r0:
+          - CVE-2017-17405
 #
   - pkg:
       name: samba
@@ -924,6 +975,8 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r1:
+          - CVE-2017-18013
         4.0.9-r0:
           - CVE-2017-16231
           - CVE-2017-16232
@@ -993,6 +1046,9 @@ packages:
   - pkg:
       name: wget
       secfixes:
+        1.18-r3:
+          - CVE-2017-13089
+          - CVE-2017-13090
         1.18-r1:
           - CVE-2017-6508
         1.17.1-r1:
@@ -1060,6 +1116,18 @@ packages:
           - CVE-2017-12137 XSA-227
           - CVE-2017-12136 XSA-228
           - CVE-2017-12855 XSA-230
+        4.6.6-r2:
+          - CVE-2017-15596 XSA-235
+          - CVE-2017-15597 XSA-236
+          - CVE-2017-15590 XSA-237
+          - XSA-238
+          - CVE-2017-15589 XSA-239
+          - CVE-2017-15595 XSA-240
+          - CVE-2017-15588 XSA-241
+          - CVE-2017-15593 XSA-242
+          - CVE-2017-15592 XSA-243
+          - CVE-2017-15594 XSA-244
+          - CVE-2017-17046 XSA-245
   - pkg:
       name: yaml
       secfixes:
