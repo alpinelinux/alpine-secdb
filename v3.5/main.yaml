@@ -99,6 +99,11 @@ packages:
         5.5.2-r0:
           - CVE-2016-6254
   - pkg:
+      name: cups
+      secfixes:
+        2.2.2-r0:
+        - CVE-2017-18190
+  - pkg:
       name: curl
       secfixes:
         7.58.0-r0:
