@@ -142,6 +142,11 @@ packages:
           - CVE-2014-0138
           - CVE-2014-0139
   - pkg:
+      name: cups
+      secfixes:
+        2.2.2-r0:
+        - CVE-2017-18190
+  - pkg:
       name: dnsmasq
       secfixes:
         2.76-r5:
