@@ -71,6 +71,12 @@ packages:
         1.0.6-r5:
         - CVE-2016-3189
   - pkg:
+      name: clamav
+      secfixes:
+        0.99.4-r0:
+          - CVE-2018-0202
+          - CVE-2018-1000085
+  - pkg:
       name: ctags
       secfixes:
         5.8-r5:
@@ -78,6 +84,9 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.60.0-r0:
+          - CVE-2018-1000300
+          - CVE-2018-1000301
         7.59.0-r0:
           - CVE-2018-1000120
           - CVE-2018-1000121
@@ -287,6 +296,11 @@ packages:
         2.0.12-r1:
           - CVE-2017-1000050
   - pkg:
+      name: jq
+      secfixes:
+        1.5-r5:
+          - CVE-2016-4074
+  - pkg:
       name: lame
       secfixes:
         3.100-r0:
@@ -451,6 +465,16 @@ packages:
   - pkg:
       name: mariadb
       secfixes:
+        10.1.32-r0:
+          - CVE-2017-10268
+          - CVE-2017-10378
+          - CVE-2017-15365
+          - CVE-2018-2562
+          - CVE-2018-2612
+          - CVE-2018-2622
+          - CVE-2018-2640
+          - CVE-2018-2665
+          - CVE-2018-2668
         10.1.22-r0:
           - CVE-2017-3313
           - CVE-2017-3302
@@ -609,12 +633,26 @@ packages:
   - pkg:
       name: perl
       secfixes:
+        5.26.2-r0:
+          - CVE-2018-6797
+          - CVE-2018-6798
+          - CVE-2018-6913
         5.26.1-r0:
-        - CVE-2017-12837
-        - CVE-2017-12883
+          - CVE-2017-12837
+          - CVE-2017-12883
   - pkg:
       name: postgresql
       secfixes:
+        10.4-r0:
+        - CVE-2018-1115
+        10.3-r0:
+        - CVE-2018-1058
+        10.2-r0:
+        - CVE-2018-1052
+        - CVE-2018-1053
+        10.1-r0:
+        - CVE-2017-15098
+        - CVE-2017-15099
         9.6.4-r0:
         - CVE-2017-7546
         - CVE-2017-7547
@@ -623,14 +661,6 @@ packages:
         - CVE-2017-7484
         - CVE-2017-7485
         - CVE-2017-7486
-        10.1-r0:
-        - CVE-2017-15098
-        - CVE-2017-15099
-        10.2-r0:
-        - CVE-2018-1052
-        - CVE-2018-1053
-        10.3-r0:
-        - CVE-2018-1058
   - pkg:
       name: py-django
       secfixes:
@@ -739,6 +769,12 @@ packages:
         0.12.8-r3:
           - CVE-2016-9577
           - CVE-2016-9578
+  - pkg:
+      name: sqlite
+      secfixes:
+        3.21.0-r1:
+        - CVE-2018-8740
+#
   - pkg:
       name: squid
       secfixes:
@@ -890,6 +926,8 @@ packages:
         - CVE-2017-6508
         1.19.2-r0:
         - CVE-2017-13090
+        1.19.5-r0:
+        - CVE-2018-0494
   - pkg:
       name: wpa_supplicant
       secfixes:
@@ -1001,6 +1039,13 @@ packages:
           - CVE-2018-7540 XSA-252
           - CVE-2018-7541 XSA-255
           - CVE-2018-7542 XSA-256
+        4.9.2-r1:
+          - CVE-2018-10472 XSA-258
+          - CVE-2018-10471 XSA-259
+        4.9.2-r2:
+          - CVE-2018-8897  XSA-260
+          - CVE-2018-10982 XSA-261
+          - CVE-2018-10981 XSA-262
   - pkg:
       name: xorg-server
       secfixes:
