@@ -43,6 +43,12 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.11.3-r0:
+          - CVE-2017-3142
+          - CVE-2017-3143
+          - CVE-2017-3141
+          - CVE-2017-3140
+          - CVE-2017-3145
         9.11.2_p1-r0:
           - CVE-2017-3145
         9.11.0_p5-r0:
@@ -188,6 +194,8 @@ packages:
   - pkg:
       name: freetype
       secfixes:
+        2.8.1-r3:
+          - CVE-2018-6942
         2.7.1-r1:
           - CVE-2017-8105
           - CVE-2017-8287
@@ -209,8 +217,16 @@ packages:
   - pkg:
       name: git
       secfixes:
+        2.15.2:
+        - CVE-2018-11233
+        - CVE-2018-11235
         2.14.1:
         - CVE-2017-1000117
+  - pkg:
+      name: gnupg
+      secfixes:
+        2.2.3-r1:
+          - CVE-2018-12020
   - pkg:
       name: gnutls
       secfixes:
@@ -380,6 +396,9 @@ packages:
   - pkg:
       name: libressl
       secfixes:
+        2.6.5-r0:
+          - CVE-2018-0732
+          - CVE-2018-0495
         2.5.3-r1:
           - CVE-2017-8301
 #
@@ -633,6 +652,8 @@ packages:
   - pkg:
       name: perl
       secfixes:
+        5.26.2-r1:
+          - CVE-2018-12015
         5.26.2-r0:
           - CVE-2018-6797
           - CVE-2018-6798
@@ -762,6 +783,20 @@ packages:
         4.6.1-r0:
           - CVE-2017-2619
   - pkg:
+      name: sdl2_image
+      secfixes:
+#
+        2.0.2-r1:
+          - CVE-2017-12122 TALOS-2017-0488
+          - CVE-2017-14440 TALOS-2017-0489
+          - CVE-2017-14441 TALOS-2017-0490
+          - CVE-2017-14442 TALOS-2017-0491
+          - CVE-2017-14448 TALOS-2017-0497
+          - CVE-2017-14450 TALOS-2017-0499
+          - CVE-2018-3837 TALOS-2018-0519
+          - CVE-2018-3838 TALOS-2018-0520
+          - CVE-2018-3839 TALOS-2018-0521
+  - pkg:
       name: spice
       secfixes:
         0.12.8-r4:
@@ -784,6 +819,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.6.3-r0:
+          - CVE-2018-5388
         5.5.3-r0:
           - CVE-2017-9022
           - CVE-2017-9023
@@ -857,6 +894,10 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r4:
+          - CVE-2018-8905
+        4.0.9-r3:
+          - CVE-2018-7456
         4.0.9-r2:
           - CVE-2018-5784
         4.0.9-r1:
@@ -907,11 +948,21 @@ packages:
   - pkg:
       name: wavpack
       secfixes:
+        5.1.0-r2:
+          - CVE-2018-10536
+          - CVE-2018-10537
+          - CVE-2018-10538
+          - CVE-2018-10539
+          - CVE-2018-10340
+        5.1.0-r1:
+          - CVE-2018-6767
+          - CVE-2018-7253
+          - CVE-2018-7254
         5.1.0-r0:
-        - CVE-2016-10169
-        - CVE-2016-10170
-        - CVE-2016-10171
-        - CVE-2016-10172
+          - CVE-2016-10169
+          - CVE-2016-10170
+          - CVE-2016-10171
+          - CVE-2016-10172
   - pkg:
       name: weechat
       secfixes:
