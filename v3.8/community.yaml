@@ -326,6 +326,17 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        2.4.8-r0:
+          - CVE-2018-14339
+          - CVE-2018-14340
+          - CVE-2018-14341
+          - CVE-2018-14342
+          - CVE-2018-14343
+          - CVE-2018-14344
+          - CVE-2018-14367
+          - CVE-2018-14368
+          - CVE-2018-14369
+          - CVE-2018-14370
         2.4.7-r0:
           - CVE-2018-11356
           - CVE-2018-11357
@@ -435,6 +446,11 @@ packages:
           - CVE-2016-6511
           - CVE-2016-6512
           - CVE-2016-6513
+  - pkg:
+      name: xapian-core
+      secfixes:
+        1.4.6-r0:
+        - CVE-2018-0499
   - pkg:
       name: zoneminder
       secfixes:
