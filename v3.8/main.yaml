@@ -74,6 +74,11 @@ packages:
         1.0.6-r5:
         - CVE-2016-3189
   - pkg:
+      name: cgit
+      secfixes:
+        1.1-r4:
+        - CVE-2018-14912
+  - pkg:
       name: clamav
       secfixes:
         0.99.4-r0:
@@ -90,6 +95,10 @@ packages:
           - CVE-2017-12378
           - CVE-2017-12379
           - CVE-2017-12380
+        0.100.1-r0:
+          - CVE-2017-16932
+          - CVE-2018-0360
+          - CVE-2018-0361
   - pkg:
       name: ctags
       secfixes:
@@ -308,6 +317,11 @@ packages:
         1.6rc1-r0:
           - CVE-2016-4074
   - pkg:
+      name: kamailio
+      secfixes:
+        5.1.4-r0:
+        - CVE-2018-14767
+  - pkg:
       name: lame
       secfixes:
         3.100-r0:
@@ -474,6 +488,12 @@ packages:
         1.1.29-r1:
           - CVE-2017-5029
   - pkg:
+      name: lxc
+      secfixes:
+        2.1.1-r9:
+        - CVE-2018-6556
+#
+  - pkg:
       name: lxterminal
       secfixes:
         0.3.0-r1:
@@ -530,6 +550,13 @@ packages:
   - pkg:
       name: mupdf
       secfixes:
+        1.13-r0:
+        - CVE-2018-1000051
+        - CVE-2018-6544
+        - CVE-2018-6192
+        - CVE-2018-6187
+        - CVE-2018-5686
+        - CVE-2017-17858
         1.11-r1:
         - CVE-2017-6060
         1.10a-r2:
@@ -666,10 +693,13 @@ packages:
   - pkg:
       name: p7zip
       secfixes:
-        16.02-r1:
-        - CVE-2016-9296
+        16.02-r3:
+        - CVE-2018-5996
+        - CVE-2018-10115
         16.02-r2:
         - CVE-2017-17969
+        16.02-r1:
+        - CVE-2016-9296
   - pkg:
       name: patch
       secfixes:
@@ -698,6 +728,9 @@ packages:
   - pkg:
       name: postgresql
       secfixes:
+        10.5-r0:
+        - CVE-2018-10915
+        - CVE-2018-10925
         10.4-r0:
         - CVE-2018-1115
         10.3-r0:
@@ -732,6 +765,8 @@ packages:
         1.11.11-r0:
           - CVE-2018-7536
           - CVE-2018-7537
+        1.11.15-r0:
+          - CVE-2018-14574
   - pkg:
       name: qemu
       secfixes:
@@ -933,6 +968,11 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r6:
+          - CVE-2017-9935
+          - CVE-2017-11613
+          - CVE-2017-17095
+          - CVE-2018-10963
         4.0.9-r5:
           - CVE-2018-8905
         4.0.9-r4:

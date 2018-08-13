@@ -146,6 +146,9 @@ packages:
           - CVE-2017-18187
           - CVE-2018-0487
           - CVE-2018-0488
+        2.7.5-r0:
+          - CVE-2018-0497
+          - CVE-2018-0498
   - pkg:
       name: mpv
       secfixes:
