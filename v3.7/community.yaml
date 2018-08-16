@@ -47,6 +47,8 @@ packages:
   - pkg:
       name: firefox-esr
       secfixes:
+        52.8.1-r0:
+          - CVE-2018-6126
         52.6.0-r0:
           - CVE-2018-5089
           - CVE-2018-5091
@@ -225,6 +227,11 @@ packages:
       secfixes:
         3.0.2-r0:
         - CVE-2017-5930
+  - pkg:
+      name: prosody
+      secfixes:
+        0.10.2-r0:
+        - CVE-2018-10847
   - pkg:
       name: quassel
       secfixes:
