@@ -14,6 +14,9 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.34-r0:
+          - CVE-2018-1333
+          - CVE-2018-8011
         2.4.33-r0:
           - CVE-2017-15710
           - CVE-2017-15715
@@ -243,6 +246,8 @@ packages:
   - pkg:
       name: gnupg1
       secfixes:
+        1.4.23-r0:
+          - CVE-2017-7526
         1.4.22-r1:
           - CVE-2018-12020
   - pkg:
@@ -322,6 +327,13 @@ packages:
         5.1.4-r0:
         - CVE-2018-14767
   - pkg:
+      name: krb5
+      secfixes:
+        1.15.3-r0:
+        - CVE-2017-15088
+        - CVE-2018-5709
+        - CVE-2018-5710
+  - pkg:
       name: lame
       secfixes:
         3.100-r0:
@@ -341,6 +353,11 @@ packages:
       secfixes:
         2.8-r1:
         - CVE-2016-10165
+  - pkg:
+      name: ldb
+      secfixes:
+        1.3.5-r0:
+          - CVE-2018-1140
   - pkg:
       name: libarchive
       secfixes:
@@ -587,8 +604,10 @@ packages:
   - pkg:
       name: ncurses
       secfixes:
+        6.1_p20180414-r0:
+          - CVE-2018-10754
         6.0_p20171125-r0:
-          - CVE-2017-16879 
+          - CVE-2017-16879
         6.0_p20170701-r0:
           - CVE-2017-10684
   - pkg:
@@ -600,6 +619,8 @@ packages:
   - pkg:
       name: nodejs
       secfixes:
+        8.11.4-r0:
+          - CVE-2018-12115
         8.11.3-r0:
           - CVE-2018-7167
           - CVE-2018-7161
@@ -644,6 +665,8 @@ packages:
   - pkg:
       name: openssh
       secfixes:
+        7.7_p1-r3:
+          - CVE-2018-15473
         7.5_p1-r8:
           - CVE-2017-15906
         7.4_p1-r0:
@@ -851,6 +874,12 @@ packages:
   - pkg:
       name: samba
       secfixes:
+        4.8.4-r0:
+          - CVE-2018-1139
+          - CVE-2018-1140
+          - CVE-2018-10858
+          - CVE-2018-10918
+          - CVE-2018-10919
         4.7.6-r0:
           - CVE-2018-1050
           - CVE-2018-1057
@@ -999,6 +1028,20 @@ packages:
         4.0.7-r1:
           - CVE-2017-5225
   - pkg:
+      name: unzip
+      secfixes:
+        6.0-r3:
+        - CVE-2014-8139
+        - CVE-2014-8140
+        - CVE-2014-8141
+        - CVE-2014-9636
+        - CVE-2014-9913
+        - CVE-2016-9844
+        - CVE-2018-1000035
+        6.0-r1:
+        - CVE-2015-7696
+        - CVE-2015-7697
+  - pkg:
       name: uwsgi
       secfixes:
         2.0.16-r0:
@@ -1062,6 +1105,8 @@ packages:
   - pkg:
       name: wpa_supplicant
       secfixes:
+        2.6-r14:
+          - CVE-2018-14526
         2.6-r7:
           - CVE-2017-13077
           - CVE-2017-13078
