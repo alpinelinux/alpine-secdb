@@ -46,6 +46,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.12.2_p1-r0:
+          - CVE-2018-5740
         9.12.1_p2-r0:
           - CVE-2018-5737
           - CVE-2018-5736
@@ -110,6 +112,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.61.1-r0:
+          - CVE-2018-14618
         7.61.0-r0:
           - CVE-2018-0500
         7.60.0-r0:
@@ -187,6 +191,11 @@ packages:
           - CVE-2017-14461
           - CVE-2017-15132
   - pkg:
+      name: dropbear
+      secfixes:
+        2018.76-r2:
+          - CVE-2018-15599
+  - pkg:
       name: elfutils
       secfixes:
         0.168-r1:
@@ -225,6 +234,13 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.24-r0:
+          - CVE-2018-15908
+          - CVE-2018-15909
+          - CVE-2018-15910
+          - CVE-2018-15911
+        9.23-r0:
+          - CVE-2018-10194
         9.21-r2:
           - CVE-2017-8291
         9.21-r3:
@@ -410,6 +426,13 @@ packages:
         - CVE-2016-6262
         - CVE-2016-6263
   - pkg:
+      name: libjpeg-turbo
+      secfixes:
+        1.5.3-r3:
+        - CVE-2018-11813
+        1.5.3-r2:
+        - CVE-2018-1152
+  - pkg:
       name: libmspack
       secfixes:
         0.7.1_alpha-r0:
@@ -432,17 +455,19 @@ packages:
   - pkg:
       name: libsndfile
       secfixes:
+        1.0.28-r4:
+          - CVE-2018-13139
         1.0.28-r2:
-        - CVE-2017-12562
+          - CVE-2017-12562
         1.0.28-r0:
-        - CVE-2017-7585
-        - CVE-2017-7741
-        - CVE-2017-7742
+          - CVE-2017-7585
+          - CVE-2017-7741
+          - CVE-2017-7742
         1.0.28-r1:
-        - CVE-2017-8361
-        - CVE-2017-8362
-        - CVE-2017-8363
-        - CVE-2017-8365
+          - CVE-2017-8361
+          - CVE-2017-8362
+          - CVE-2017-8363
+          - CVE-2017-8365
   - pkg:
       name: libsoup
       secfixes:
@@ -800,6 +825,12 @@ packages:
           - CVE-2018-7537
         1.11.15-r0:
           - CVE-2018-14574
+  - pkg:
+      name: python3
+      secfixes:
+        3.6.6-r0:
+        - CVE-2018-1060
+        - CVE-2018-1061
   - pkg:
       name: qemu
       secfixes:
@@ -1232,6 +1263,19 @@ packages:
           - CVE-2018-8897 XSA-260
           - CVE-2018-10982 XSA-261
           - CVE-2018-10981 XSA-262
+        4.10.1-r3:
+          - CVE-2018-14678 XSA-274
+          - CVE-2018-3646 XSA-273
+          - CVE-2018-15470 XSA-272
+          - CVE-2018-14007 XSA-271
+          - CVE-2018-15471 XSA-270
+          - CVE-2018-15468 XSA-269
+          - CVE-2018-15469 XSA-268
+          - CVE-2018-3665 XSA-267
+          - CVE-2018-12892 XSA-266
+          - CVE-2018-12893 XSA-265
+          - CVE-2018-12891 XSA-264
+          - CVE-2018-3639 XSA-263
   - pkg:
       name: xorg-server
       secfixes:
