@@ -46,6 +46,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.11.4_p1-r0:
+          - CVE-2018-5740
         9.11.3-r0:
           - CVE-2017-3142
           - CVE-2017-3143
@@ -102,6 +104,8 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.61.1-r0:
+          - CVE-2018-14618
         7.61.0-r0:
           - CVE-2018-0500
         7.60.0-r0:
@@ -162,6 +166,8 @@ packages:
   - pkg:
       name: dnsmasq
       secfixes:
+        2.78-r2:
+          - CVE-2017-15107
         2.78-r0:
           - CVE-2017-13704
           - CVE-2017-14491
@@ -178,6 +184,11 @@ packages:
           - CVE-2017-15130
           - CVE-2017-14461
           - CVE-2017-15132
+  - pkg:
+      name: dropbear
+      secfixes:
+        2018.76-r2:
+          - CVE-2018-15599
   - pkg:
       name: elfutils
       secfixes:
@@ -228,6 +239,13 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.24-r0:
+          - CVE-2018-15908
+          - CVE-2018-15909
+          - CVE-2018-15910
+          - CVE-2018-15911
+        9.23-r0:
+          - CVE-2018-10194
         9.21-r2:
           - CVE-2017-8291
         9.21-r3:
@@ -375,6 +393,11 @@ packages:
         2.8-r1:
         - CVE-2016-10165
   - pkg:
+      name: ldb
+      secfixes:
+        1.3.0-r1:
+          - CVE-2018-1140
+  - pkg:
       name: libarchive
       secfixes:
         3.3.2-r1:
@@ -423,8 +446,22 @@ packages:
         - CVE-2016-6262
         - CVE-2016-6263
   - pkg:
+      name: libjpeg-turbo
+      secfixes:
+        1.5.3-r2:
+        - CVE-2018-11813
+        1.5.3-r1:
+        - CVE-2018-1152
+        1.5.3-r0:
+        - CVE-2017-15232
+  - pkg:
       name: libmspack
       secfixes:
+        0.7.1_alpha-r0:
+          - CVE-2018-14679
+          - CVE-2018-14680
+          - CVE-2018-14681
+          - CVE-2018-14682
         0.5_alpha-r1:
           - CVE-2017-6419
           - CVE-2017-11423
@@ -448,17 +485,19 @@ packages:
   - pkg:
       name: libsndfile
       secfixes:
+        1.0.28-r3:
+          - CVE-2018-13139
         1.0.28-r2:
-        - CVE-2017-12562
+          - CVE-2017-12562
         1.0.28-r0:
-        - CVE-2017-7585
-        - CVE-2017-7741
-        - CVE-2017-7742
+          - CVE-2017-7585
+          - CVE-2017-7741
+          - CVE-2017-7742
         1.0.28-r1:
-        - CVE-2017-8361
-        - CVE-2017-8362
-        - CVE-2017-8363
-        - CVE-2017-8365
+          - CVE-2017-8361
+          - CVE-2017-8362
+          - CVE-2017-8363
+          - CVE-2017-8365
   - pkg:
       name: libsoup
       secfixes:
@@ -617,6 +656,11 @@ packages:
         - CVE-2018-14359
         - CVE-2018-14362
   - pkg:
+      name: myrepos
+      secfixes:
+        1.20180726-r0:
+        - CVE-2018-7032
+  - pkg:
       name: ncurses
       secfixes:
         6.0_p20171125-r1:
@@ -674,6 +718,8 @@ packages:
   - pkg:
       name: openssh
       secfixes:
+        7.5_p1-r9:
+          - CVE-2018-15473
         7.5_p1-r0:
           - CVE-2017-15906
         7.5_p1-r8:
@@ -796,6 +842,18 @@ packages:
         1.11.15-r0:
           - CVE-2018-14574
   - pkg:
+      name: python2
+      secfixes:
+        2.7.15-r0:
+          - CVE-2018-1060
+          - CVE-2018-1061
+  - pkg:
+      name: python3
+      secfixes:
+        3.6.5-r0:
+          - CVE-2018-1060
+          - CVE-2018-1061
+  - pkg:
       name: qemu
       secfixes:
         2.8.1-r1:
@@ -874,6 +932,11 @@ packages:
   - pkg:
       name: samba
       secfixes:
+        4.7.6-r1:
+          - CVE-2018-1139
+          - CVE-2018-10858
+          - CVE-2018-10918
+          - CVE-2018-10919
         4.7.6-r0:
           - CVE-2018-1050
           - CVE-2018-1057
