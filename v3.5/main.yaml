@@ -267,6 +267,8 @@ packages:
   - pkg:
       name: gd
       secfixes:
+        2.2.5-r1:
+        - CVE-2018-1000222
         2.2.5-r0:
           - CVE-2017-6362
           - CVE-2017-7890
@@ -566,6 +568,13 @@ packages:
         - CVE-2017-14633
         1.3.5-r2:
         - CVE-2017-14160
+  - pkg:
+      name: libx11
+      secfixes:
+        1.6.6-r0:
+        - CVE-2018-14598
+        - CVE-2018-14599
+        - CVE-2018-14600
   - pkg:
       name: libxcursor
       secfixes:
@@ -1075,6 +1084,9 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.5.3-r2:
+          - CVE-2018-16151
+          - CVE-2018-16152
         5.5.3-r1:
           - CVE-2017-11185
         5.5.3-r0:
