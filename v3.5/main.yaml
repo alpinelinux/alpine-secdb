@@ -305,6 +305,8 @@ packages:
   - pkg:
       name: git
       secfixes:
+        2.11.3-r2:
+          - CVE-2018-17456
         2.11.3-r1:
           - CVE-2018-11233
           - CVE-2018-11235
@@ -382,6 +384,11 @@ packages:
           - CVE-2017-13087
           - CVE-2017-13088
   - pkg:
+      name: hylafax
+      secfixes:
+        6.0.6-r4:
+          - CVE-2018-17141
+  - pkg:
       name: icu
       secfixes:
         57.1-r1:
@@ -457,6 +464,11 @@ packages:
         - CVE-2016-10195
         - CVE-2016-10196
         - CVE-2016-10197
+  - pkg:
+      name: libexif
+      secfixes:
+        0.6.21-r2:
+          - CVE-2017-7544
   - pkg:
       name: libgcrypt
       secfixes:
@@ -535,6 +547,11 @@ packages:
         2.56.1-r0:
           - CVE-2017-2885
   - pkg:
+      name: libssh
+      secfixes:
+        0.7.6-r0:
+        - CVE-2018-10933
+  - pkg:
       name: libtasn1
       secfixes:
         4.9-r1:
@@ -583,14 +600,18 @@ packages:
   - pkg:
       name: libxml2
       secfixes:
-        2.9.4-r1:
-          - CVE-2016-5131
-        2.9.4-r2:
-          - CVE-2016-9318
-        2.9.4-r3:
-          - CVE-2017-5969
+        2.9.8-r1:
+        - CVE-2018-9251
+        - CVE-2018-14404
+        - CVE-2018-14567
         2.9.5-r0:
-          - CVE-2017-16931
+        - CVE-2017-16931
+        2.9.4-r3:
+        - CVE-2017-5969
+        2.9.4-r2:
+        - CVE-2016-9318
+        2.9.4-r1:
+        - CVE-2016-5131
   - pkg:
       name: libxslt
       secfixes:
@@ -1007,6 +1028,9 @@ packages:
   - pkg:
       name: ruby
       secfixes:
+        2.3.8-r0:
+          - CVE-2018-16395
+          - CVE-2018-16396
         2.3.7-r0:
           - CVE-2017-17742
           - CVE-2018-6914
@@ -1084,6 +1108,8 @@ packages:
   - pkg:
       name: strongswan
       secfixes:
+        5.5.3-r3:
+          - CVE-2018-17540
         5.5.3-r2:
           - CVE-2018-16151
           - CVE-2018-16152
