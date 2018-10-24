@@ -254,10 +254,12 @@ packages:
   - pkg:
       name: git
       secfixes:
-        2.17.1:
+        2.18.1-r0:
+        - CVE-2018-17456
+        2.17.1-r0:
         - CVE-2018-11233
         - CVE-2018-11235
-        2.14.1:
+        2.14.1-r0:
         - CVE-2017-1000117
   - pkg:
       name: gnupg
@@ -550,12 +552,16 @@ packages:
   - pkg:
       name: libxml2
       secfixes:
-        2.9.4-r1:
-          - CVE-2016-5131
-        2.9.4-r2:
-          - CVE-2016-9318
+        2.9.8-r1:
+        - CVE-2018-9251
+        - CVE-2018-14404
+        - CVE-2018-14567
         2.9.4-r4:
-          - CVE-2017-5969
+        - CVE-2017-5969
+        2.9.4-r2:
+        - CVE-2016-9318
+        2.9.4-r1:
+        - CVE-2016-5131
   - pkg:
       name: libxslt
       secfixes:
