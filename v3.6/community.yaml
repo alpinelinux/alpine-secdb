@@ -76,6 +76,15 @@ packages:
           - CVE-2017-1000381
 #
   - pkg:
+      name: openjdk8
+      secfixes:
+        8.181.13-r0:
+          - CVE-2018-2938
+          - CVE-2018-2940
+          - CVE-2018-2952
+          - CVE-2018-2973
+          - CVE-2018-3639
+  - pkg:
       name: pcmanfm
       secfixes:
         1.2.5-r1:
