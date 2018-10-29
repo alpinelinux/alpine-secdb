@@ -1,0 +1,8 @@
+Alpine Security Database of Backported fixes
+--------------------------------------------
+
+The purpose of this database is to make it possible to know what packages has
+backported fixes. It is not a complete database of all security issues in
+Alpine, and it should be used in combination with another more complete CVE
+database.
+
