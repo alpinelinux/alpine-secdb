@@ -14,6 +14,8 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.35-r0:
+          - CVE-2018-11763
         2.4.34-r0:
           - CVE-2018-1333
           - CVE-2018-8011
@@ -169,6 +171,16 @@ packages:
       secfixes:
         2.1.26-r7:
         - CVE-2013-4122
+  - pkg:
+      name: db
+      secfixes:
+      # whitelist issues for Oracle Berkeley DB (later closed source releases)
+        "0":
+        - CVE-2016-0682
+        - CVE-2016-0689
+        - CVE-2016-0692
+        - CVE-2016-0694
+        - CVE-2016-3418
   - pkg:
       name: dnsmasq
       secfixes:
@@ -1322,6 +1334,8 @@ packages:
   - pkg:
       name: xorg-server
       secfixes:
+        1.19.6-r3:
+          - CVE-2018-14665
         1.19.5-r0:
           - CVE-2017-12176
           - CVE-2017-12177

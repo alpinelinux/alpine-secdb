@@ -375,6 +375,11 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        2.4.10-r0:
+          - CVE-2018-12086
+          - CVE-2018-18225
+          - CVE-2018-18226
+          - CVE-2018-18227
         2.4.9-r0:
           - CVE-2018-16056
           - CVE-2018-16057
