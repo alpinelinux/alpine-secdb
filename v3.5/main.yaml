@@ -17,6 +17,8 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.35-r0:
+          - CVE-2018-11763
         2.4.34-r0:
           - CVE-2018-1333
           - CVE-2018-8011
@@ -134,6 +136,10 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.61.1-r1:
+          - CVE-2018-16839
+          - CVE-2018-16840
+          - CVE-2018-16842
         7.61.1-r0:
           - CVE-2018-14618
         7.61.0-r0:
@@ -210,6 +216,8 @@ packages:
   - pkg:
       name: dropbear
       secfixes:
+        2017.75-r1:
+          - CVE-2018-15599
         2017.75-r0:
           - CVE-2017-9078
           - CVE-2017-9079
@@ -291,6 +299,8 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.25-r0:
+          - CVE-2018-16802
         9.24-r0:
           - CVE-2018-15908
           - CVE-2018-15909
@@ -388,6 +398,11 @@ packages:
       secfixes:
         6.0.6-r4:
           - CVE-2018-17141
+  - pkg:
+      name: icecast
+      secfixes:
+        2.4.4-r0:
+          - CVE-2018-18820
   - pkg:
       name: icu
       secfixes:
@@ -834,6 +849,9 @@ packages:
         1.0.2o-r1:
           - CVE-2018-0732
           - CVE-2018-0737
+        1.0.2q-r0:
+          - CVE-2018-0734
+          - CVE-2018-5407
   - pkg:
       name: openvpn
       secfixes:
@@ -1090,6 +1108,8 @@ packages:
   - pkg:
       name: spice
       secfixes:
+        0.12.8-r4:
+          - CVE-2018-10873
         0.12.8-r3:
           - CVE-2017-7506
   - pkg:
@@ -1183,6 +1203,10 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r6:
+          - CVE-2018-10779
+          - CVE-2018-17100
+          - CVE-2018-17101
         4.0.9-r5:
           - CVE-2017-9935
           - CVE-2017-11613
