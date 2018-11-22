@@ -114,6 +114,10 @@ packages:
   - pkg:
       name: curl
       secfixes:
+        7.61.1-r1:
+          - CVE-2018-16839
+          - CVE-2018-16840
+          - CVE-2018-16842
         7.61.1-r0:
           - CVE-2018-14618
         7.61.0-r0:
@@ -251,6 +255,8 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.25-r0:
+          - CVE-2018-16802
         9.24-r0:
           - CVE-2018-15908
           - CVE-2018-15909
@@ -315,6 +321,11 @@ packages:
       secfixes:
         6.0.6-r5:
           - CVE-2018-17141
+  - pkg:
+      name: icecast
+      secfixes:
+        2.4.4-r0:
+          - CVE-2018-18820
   - pkg:
       name: icu
       secfixes:
@@ -391,8 +402,10 @@ packages:
   - pkg:
       name: lcms2
       secfixes:
+        2.9-r1:
+          - CVE-2018-16435
         2.8-r1:
-        - CVE-2016-10165
+          - CVE-2016-10165
   - pkg:
       name: ldb
       secfixes:
@@ -693,6 +706,10 @@ packages:
   - pkg:
       name: nginx
       secfixes:
+        1.14.1-r0:
+          - CVE-2018-16843
+          - CVE-2018-16844
+          - CVE-2018-16845
         1.12.1-r0:
           - CVE-2017-7529
 #
@@ -798,6 +815,9 @@ packages:
           - CVE-2018-0732
         1.0.2o-r2:
           - CVE-2018-0737
+        1.0.2q-r0:
+          - CVE-2018-0734
+          - CVE-2018-5407
   - pkg:
       name: p7zip
       secfixes:
@@ -808,6 +828,11 @@ packages:
         - CVE-2017-17969
         16.02-r1:
         - CVE-2016-9296
+  - pkg:
+      name: pango
+      secfixes:
+        1.40.14-r1:
+          - CVE-2018-15120
   - pkg:
       name: patch
       secfixes:
@@ -1000,6 +1025,8 @@ packages:
   - pkg:
       name: spice
       secfixes:
+        0.14.1-r0:
+          - CVE-2018-10873
         0.12.8-r4:
           - CVE-2017-7506
         0.12.8-r3:
@@ -1096,6 +1123,10 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.9-r7:
+          - CVE-2018-10779
+          - CVE-2018-17100
+          - CVE-2018-17101
         4.0.9-r6:
           - CVE-2017-9935
           - CVE-2017-11613
