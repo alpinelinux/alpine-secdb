@@ -307,6 +307,12 @@ packages:
         1.2.5-r0:
           - CVE-2017-8114
   - pkg:
+      name: salt
+      secfixes:
+        2018.3.3-r0:
+        - CVE-2018-15750
+        - CVE-2018-15751
+  - pkg:
       name: shadow
       secfixes:
         4.5-r0:
