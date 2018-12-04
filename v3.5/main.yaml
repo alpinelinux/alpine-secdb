@@ -458,6 +458,11 @@ packages:
        2.8-r1:
        - CVE-2016-10165
   - pkg:
+      name: libao
+      secfixes:
+        1.2.0-r2:
+        - CVE-2017-11548
+  - pkg:
       name: libarchive
       secfixes:
         3.3.1-r2:
