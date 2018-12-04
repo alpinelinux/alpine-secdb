@@ -90,6 +90,11 @@ packages:
         1.2.5-r1:
           - CVE-2017-8934
   - pkg:
+      name: pdns
+      secfixes:
+        4.0.6-r0:
+        - CVE-2018-10851
+  - pkg:
       name: php5
       secfixes:
         5.6.37-r0:

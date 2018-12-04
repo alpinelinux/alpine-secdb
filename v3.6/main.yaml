@@ -50,6 +50,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.11.5-r0:
+          - CVE-2018-5741
         9.11.4_p1-r0:
           - CVE-2018-5740
         9.11.3-r0:
@@ -313,6 +315,10 @@ packages:
   - pkg:
       name: git
       secfixes:
+        2.13.7-r2:
+        - CVE-2018-19486
+        2.13.7-r1:
+        - CVE-2018-17456
         2.13.7:
         - CVE-2018-11233
         - CVE-2018-11235
@@ -451,6 +457,11 @@ packages:
       secfixes:
         2.8-r1:
         - CVE-2016-10165
+  - pkg:
+      name: libao
+      secfixes:
+        1.2.0-r2:
+        - CVE-2017-11548
   - pkg:
       name: libarchive
       secfixes:
@@ -916,6 +927,11 @@ packages:
   - pkg:
       name: perl
       secfixes:
+        5.24.4-r2:
+          - CVE-2018-18311
+          - CVE-2018-18312
+          - CVE-2018-18313
+          - CVE-2018-18314
         5.24.4-r1:
           - CVE-2018-12015
         5.24.3-r0:
