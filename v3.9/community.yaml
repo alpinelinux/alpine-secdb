@@ -336,6 +336,9 @@ packages:
   - pkg:
       name: phpmyadmin
       secfixes:
+        4.8.5-r0:
+          - CVE-2019-6798
+          - CVE-2019-6799
         4.8.4-r0:
           - CVE-2018-19968
           - CVE-2018-19969
@@ -475,6 +478,10 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        2.6.7-r0:
+          - CVE-2019-9208
+          - CVE-2019-9209
+          - CVE-2019-9214
         2.6.6-r0:
           - CVE-2019-5717
           - CVE-2019-5718
