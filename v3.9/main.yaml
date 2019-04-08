@@ -20,6 +20,13 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.39-r0:
+          - CVE-2019-0196
+          - CVE-2019-0197
+          - CVE-2019-0211
+          - CVE-2019-0215
+          - CVE-2019-0217
+          - CVE-2019-0220
         2.4.38-r0:
           - CVE-2018-17189
           - CVE-2018-17199
@@ -235,6 +242,8 @@ packages:
   - pkg:
       name: dovecot
       secfixes:
+        2.3.5.1-r0:
+          - CVE-2019-7524
         2.3.4.1-r0:
           - CVE-2019-3814
         2.3.1-r0:
@@ -283,6 +292,10 @@ packages:
   - pkg:
       name: gd
       secfixes:
+        2.2.5-r2:
+        - CVE-2018-5711
+        - CVE-2019-6977
+        - CVE-2019-6978
         2.2.5-r1:
         - CVE-2018-1000222
   - pkg:
@@ -295,6 +308,10 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.26-r2:
+          - CVE-2019-3835
+          - CVE-2019-3838
+          - CVE-2019-6116
         9.26-r1:
           - CVE-2019-6116
         9.26-r0:
@@ -964,6 +981,14 @@ packages:
         - CVE-2017-7484
         - CVE-2017-7485
         - CVE-2017-7486
+  - pkg:
+      name: putty
+      secfixes:
+        0.71-r0:
+          - CVE-2019-9894
+          - CVE-2019-9895
+          - CVE-2019-9897
+          - CVE-2019-9898
   - pkg:
       name: py-django
       secfixes:
