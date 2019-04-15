@@ -65,6 +65,12 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.12.3_p4-r0:
+          - CVE-2019-6465
+          - CVE-2018-5745
+          - CVE-2018-5744
+        9.12.3-r0:
+          - CVE-2018-5741
         9.12.2_p1-r0:
           - CVE-2018-5740
           - CVE-2018-5738
@@ -367,6 +373,9 @@ packages:
   - pkg:
       name: gnutls
       secfixes:
+        3.6.7-r0:
+          - CVE-2019-3836
+          - CVE-2019-3829
         3.5.13-r0:
           - CVE-2017-7507
   - pkg:
@@ -598,6 +607,9 @@ packages:
   - pkg:
       name: libsndfile
       secfixes:
+        1.0.28-r8:
+          - CVE-2018-19758
+          - CVE-2019-3832
         1.0.28-r7:
           - CVE-2018-19758
         1.0.28-r6:
