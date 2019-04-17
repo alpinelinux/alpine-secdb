@@ -61,6 +61,11 @@ packages:
         2.0-r1:
           - CVE-2017-8798
   - pkg:
+      name: mumble
+      secfixes:
+        1.2.19-r2:
+          - CVE-2018-20743
+  - pkg:
       name: neovim
       secfixes:
         0.1.6-r1:
@@ -76,8 +81,37 @@ packages:
           - CVE-2017-1000381
 #
   - pkg:
+      name: openjdk7
+      secfixes:
+        7.211.2.6.17-r0:
+        - CVE-2018-11212
+        - CVE-2019-2422
+        - CVE_2019-2426
+        7.201.2.6.16-r0:
+        - CVE-2018-3136
+        - CVE-2018-3139
+        - CVE-2018-3149
+        - CVE-2018-3169
+        - CVE-2018-3180
+        - CVE-2018-3214
+        - CVE-2018-13785
+  - pkg:
       name: openjdk8
       secfixes:
+        8.201.08-r0:
+          - CVE-2019-2422
+          - CVE-2019-2426
+          - CVE-2018-11212
+        8.191.12-r0:
+          - CVE-2018-3136
+          - CVE-2018-3139
+          - CVE-2018-3149
+          - CVE-2018-3169
+          - CVE-2018-3180
+          - CVE-2018-3183
+          - CVE-2018-3214
+          - CVE-2018-13785
+          - CVE-2018-16435
         8.181.13-r0:
           - CVE-2018-2938
           - CVE-2018-2940
@@ -90,8 +124,17 @@ packages:
         1.2.5-r1:
           - CVE-2017-8934
   - pkg:
+      name: pdns-recursor
+      secfixes:
+        4.0.9-r0:
+          - CVE-2018-10851
+          - CVE-2018-14644
+          - CVE-2018-14626
+  - pkg:
       name: pdns
       secfixes:
+        4.0.7-r0:
+        - CVE-2019-3871
         4.0.6-r0:
         - CVE-2018-10851
   - pkg:
