@@ -120,6 +120,10 @@ packages:
   - pkg:
       name: clamav
       secfixes:
+        0.100.3-r0:
+          - CVE-2019-1787
+          - CVE-2019-1788
+          - CVE-2019-1789
         0.99.4-r0:
           - CVE-2012-6706
           - CVE-2017-6419
@@ -421,6 +425,13 @@ packages:
           - CVE-2017-7867
           - CVE-2017-7868
   - pkg:
+      name: imagemagick
+      secfixes:
+        7.0.8.38-r0:
+          - CVE-2019-9956
+          - CVE-2019-10649
+          - CVE-2019-10650
+  - pkg:
       name: irssi
       secfixes:
         1.1.2-r0:
@@ -703,8 +714,10 @@ packages:
   - pkg:
       name: libxslt
       secfixes:
+        1.1.33-r1:
+        - CVE-2019-11068
         1.1.29-r1:
-          - CVE-2017-5029
+        - CVE-2017-5029
   - pkg:
       name: lxc
       secfixes:
@@ -1123,6 +1136,9 @@ packages:
   - pkg:
       name: samba
       secfixes:
+        4.8.11-r0:
+          - CVE-2018-14629
+          - CVE-2019-3880
         4.8.7-r0:
           - CVE-2018-14629
           - CVE-2018-16841
@@ -1400,6 +1416,12 @@ packages:
   - pkg:
       name: wpa_supplicant
       secfixes:
+        2.7-r2:
+          - CVE-2019-9494
+          - CVE-2019-9495
+          - CVE-2019-9497
+          - CVE-2019-9498
+          - CVE-2019-9499
         2.7-r0:
           - CVE-2017-13077
           - CVE-2017-13078
