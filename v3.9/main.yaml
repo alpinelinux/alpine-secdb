@@ -467,7 +467,7 @@ packages:
   - pkg:
       name: jq
       secfixes:
-        1.6_rc1-r0:
+        1.6-r0:
           - CVE-2016-4074
   - pkg:
       name: kamailio
