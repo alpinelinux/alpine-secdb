@@ -240,6 +240,12 @@ packages:
           - CVE-2018-9133
           - CVE-2018-9135
   - pkg:
+      name: jenkins
+      secfixes:
+        2.164.2-r0:
+          - CVE-2019-1003049
+          - CVE-2019-1003050
+  - pkg:
       name: keepalived
       secfixes:
         2.0.11-r0:
@@ -421,6 +427,9 @@ packages:
   - pkg:
       name: php7
       secfixes:
+        7.2.19-r0:
+          - CVE-2019-11039
+          - CVE-2019-11040
         7.2.18-r0:
           - CVE-2019-11036
         7.2.17-r0:

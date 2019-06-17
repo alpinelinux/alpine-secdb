@@ -387,6 +387,11 @@ packages:
         3.6.11-r0:
         - CVE-2018-20683
   - pkg:
+      name: glib
+      secfixes:
+        2.58.1-r3:
+        - CVE-2019-12450
+  - pkg:
       name: gnupg
       secfixes:
         2.2.8-r0:
