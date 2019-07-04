@@ -65,6 +65,8 @@ packages:
   - pkg:
       name: bind
       secfixes:
+        9.12.4_p2-r0:
+          - CVE-2019-6471
         9.12.4_p1-r0:
           - CVE-2018-5743
           - CVE-2019-6467
@@ -108,6 +110,8 @@ packages:
   - pkg:
       name: bzip2
       secfixes:
+        1.0.6-r7:
+        - CVE-2019-12900
         1.0.6-r5:
         - CVE-2016-3189
   - pkg:
@@ -242,6 +246,11 @@ packages:
         2.1.26-r7:
         - CVE-2013-4122
   - pkg:
+      name: dbus
+      secfixes:
+        1.10.28-r0:
+        - CVE-2019-12749
+  - pkg:
       name: dnsmasq
       secfixes:
         2.79-r0:
@@ -284,8 +293,10 @@ packages:
   - pkg:
       name: expat
       secfixes:
+        2.2.7-r0:
+        - CVE-2018-20843
         2.2.0-r1:
-          - CVE-2017-9233
+        - CVE-2017-9233
   - pkg:
       name: file
       secfixes:
@@ -473,6 +484,8 @@ packages:
   - pkg:
       name: irssi
       secfixes:
+        1.1.3-r0:
+          - CVE-2019-13045
         1.1.2-r0:
           - CVE-2019-5882
         1.0.3-r0:
@@ -699,6 +712,11 @@ packages:
       secfixes:
         4.10.0-r2:
           - CVE-2019-3840
+        5.5.0-r0:
+          - CVE-2019-10161
+          - CVE-2019-10166
+          - CVE-2019-10167
+          - CVE-2019-10168
   - pkg:
       name: libvncserver
       secfixes:
@@ -1059,6 +1077,8 @@ packages:
   - pkg:
       name: postgresql
       secfixes:
+        11.4-r0:
+        - CVE-2019-10164
         11.3-r0:
         - CVE-2019-10129
         - CVE-2019-10130
@@ -1115,6 +1135,8 @@ packages:
           - CVE-2019-3498
         1.11.19-r0:
           - CVE-2019-6975
+        1.11.21-r0:
+          - CVE-2019-12308
   - pkg:
       name: python2
       secfixes:

@@ -28,10 +28,20 @@ packages:
         72.0.3626.121-r0:
           - CVE-2019-5786
   - pkg:
+      name: containerd
+      secfixes:
+        1.2.6:
+          - CVE-2019-9946
+  - pkg:
       name: cpio
       secfixes:
         2.12-r3:
           - CVE-2016-2037
+  - pkg:
+      name: docker
+      secfixes:
+        18.09.7-r0:
+        - CVE-2018-15664
   - pkg:
       name: drupal7
       secfixes:
@@ -391,6 +401,11 @@ packages:
           - CVE-2018-16426
           - CVE-2018-16427
   - pkg:
+      name: patchwork
+      secfixes:
+        2.0.1-r1:
+          - CVE-2019-13122
+  - pkg:
       name: pcmanfm
       secfixes:
         1.2.5-r1:
@@ -417,6 +432,9 @@ packages:
   - pkg:
       name: pdns
       secfixes:
+        4.1.10-r0:
+          - CVE-2019-10163
+          - CVE-2019-10162
         4.1.7-r0:
           - CVE-2019-3871
         4.1.5-r0:
