@@ -276,6 +276,10 @@ packages:
   - pkg:
       name: openjdk8
       secfixes:
+        8.212.04-r0:
+          - CVE-2019-2602
+          - CVE-2019-2684
+          - CVE-2019-2698
         8.201.08-r0:
           - CVE-2019-2422
           - CVE-2019-2426
@@ -296,6 +300,11 @@ packages:
           - CVE-2018-2952
           - CVE-2018-2973
           - CVE-2018-3639
+  - pkg:
+      name: patchwork
+      secfixes:
+        2.0.1-r1:
+          - CVE-2019-13122
   - pkg:
       name: pcmanfm
       secfixes:
@@ -322,6 +331,9 @@ packages:
   - pkg:
       name: pdns
       secfixes:
+        4.1.10-r0:
+          - CVE-2019-10163
+          - CVE-2019-10162
         4.1.7-r0:
           - CVE-2019-3871
         4.1.5-r0:
@@ -353,7 +365,11 @@ packages:
   - pkg:
       name: php7
       secfixes:
+        7.2.18-r0:
+          - CVE-2019-11036
         7.2.17-r0:
+          - CVE-2019-11034
+          - CVE-2019-11035
           - CVE-2019-9641
           - CVE-2019-9640
           - CVE-2019-9639
