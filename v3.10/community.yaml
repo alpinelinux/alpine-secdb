@@ -56,6 +56,8 @@ packages:
   - pkg:
       name: docker
       secfixes:
+        18.09.8:
+          - CVE-2019-13509
         18.09.7:
           - CVE-2018-15664
   - pkg:
@@ -74,11 +76,15 @@ packages:
   - pkg:
       name: evince
       secfixes:
+        3.32.0-r1:
+        - CVE-2019-11459
         3.24.0-r2:
-          - CVE-2017-1000083
+        - CVE-2017-1000083
   - pkg:
       name: exim
       secfixes:
+        4.92.1-r0:
+          - CVE-2019-13917
         4.92-r0:
           - CVE-2019-10149
         4.91-r0:
@@ -136,6 +142,17 @@ packages:
   - pkg:
       name: firefox-esr
       secfixes:
+        60.8.0-r0:
+          - CVE-2019-9811
+          - CVE-2019-11709
+          - CVE-2019-11711
+          - CVE-2019-11712
+          - CVE-2019-11713
+          - CVE-2019-11715
+          - CVE-2019-11717
+          - CVE-2019-11719
+          - CVE-2019-11729
+          - CVE-2019-11730
         60.7.2-r0:
           - CVE-2019-11708
         60.7.1-r0:
@@ -249,8 +266,42 @@ packages:
         - CVE-2017-5884
         - CVE-2017-5885
   - pkg:
+      name: gvfs
+      secfixes:
+        1.40.2-r0:
+          - CVE-2019-12795
+          - CVE-2019-12449
+          - CVE-2019-12447
+          - CVE-2019-12448
+  - pkg:
       name: imagemagick6
       secfixes:
+        6.9.10.55-r0:
+          - CVE-2019-13454
+        6.9.10.53-r0:
+          - CVE-2019-13391
+          - CVE-2019-13311
+          - CVE-2019-13310
+          - CVE-2019-13309
+          - CVE-2019-13308
+          - CVE-2019-13307
+          - CVE-2019-13306
+          - CVE-2019-13305
+          - CVE-2019-13304
+          - CVE-2019-13303
+          - CVE-2019-13302
+          - CVE-2019-13301
+          - CVE-2019-13300
+          - CVE-2019-13299
+          - CVE-2019-13298
+          - CVE-2019-13297
+          - CVE-2019-13296
+          - CVE-2019-13295
+          - CVE-2019-13137
+          - CVE-2019-13136
+          - CVE-2019-13135
+          - CVE-2019-13134
+          - CVE-2019-13133
         6.9.10.43-r0:
           - CVE-2019-11598
           - CVE-2019-11597
@@ -330,12 +381,20 @@ packages:
         - CVE-2016-8568
         - CVE-2016-8569
   - pkg:
+      name: libosinfo
+      secfixes:
+        1.5.0-r1:
+          - CVE-2019-13313
+  - pkg:
       name: libraw
       secfixes:
         0.19.2-r0:
           - CVE-2018-20363
           - CVE-2018-20364
           - CVE-2018-20365
+          - CVE-2018-5817
+          - CVE-2018-5818
+          - CVE-2018-5819
         0.18.6-r0:
           - CVE-2017-16910
         0.18.5-r0:
@@ -404,6 +463,11 @@ packages:
           - CVE-2019-6443
           - CVE-2019-6444
           - CVE-2019-6445
+  - pkg:
+      name: openexr
+      secfixes:
+        2.2.1-r1:
+          - CVE-2018-18444
   - pkg:
       name: openjdk7
       secfixes:
@@ -499,6 +563,8 @@ packages:
   - pkg:
       name: pdns
       secfixes:
+        4.1.11-r0:
+          - CVE-2019-10203
         4.1.10-r0:
           - CVE-2019-10163
           - CVE-2019-10162
@@ -512,6 +578,9 @@ packages:
   - pkg:
       name: php7
       secfixes:
+        7.3.8-r0:
+          - CVE-2019-11041
+          - CVE-2019-11042
         7.2.19-r0:
           - CVE-2019-11039
           - CVE-2019-11040
@@ -667,6 +736,22 @@ packages:
         - CVE-2018-17097
         - CVE-2018-17098
   - pkg:
+      name: sox
+      secfixes:
+        14.4.2-r5:
+          - CVE-2017-13571
+          - CVE-2017-11358
+          - CVE-2017-15370
+          - CVE-2017-11332
+          - CVE-2017-11359
+          - CVE-2017-15372
+          - CVE-2017-13642
+          - CVE-2017-18189
+          - CVE-2019-8354
+          - CVE-2019-8355
+          - CVE-2019-8356
+          - CVE-2019-8357
+  - pkg:
       name: tor
       secfixes:
         0.3.5.8-r0:
@@ -677,6 +762,16 @@ packages:
         - CVE-2018-0490
         - CVE-2018-0491
   - pkg:
+      name: vault
+      secfixes:
+        1.1.1-r0:
+          - CVE-2019-11075
+  - pkg:
+      name: vlc
+      secfixes:
+        3.0.7.1-r1:
+          - CVE-2019-13602
+  - pkg:
       name: w3m
       secfixes:
         0.5.3.20180125-r0:
@@ -686,6 +781,18 @@ packages:
   - pkg:
       name: webkit2gtk
       secfixes:
+        2.24.1-r0:
+          - CVE-2019-6251
+          - CVE-2019-8506
+          - CVE-2019-8524
+          - CVE-2019-8535
+          - CVE-2019-8536
+          - CVE-2019-8544
+          - CVE-2019-8551
+          - CVE-2019-8558
+          - CVE-2019-8559
+          - CVE-2019-8563
+          - CVE-2019-11070
         2.22.7-r0:
           - CVE-2018-4437
           - CVE-2019-6212
@@ -725,6 +832,8 @@ packages:
   - pkg:
       name: wireshark
       secfixes:
+        3.0.3-r0:
+          - CVE-2019-13619
         3.0.2-r0:
           - CVE-2019-12295
         3.0.1-r0:
