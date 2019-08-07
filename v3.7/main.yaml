@@ -57,6 +57,12 @@ packages:
         1.33.1-r1:
           - CVE-2019-3500
   - pkg:
+      name: avahi
+      secfixes:
+        0.6.32-r5:
+          - CVE-2017-6519
+          - CVE-2018-1000845
+  - pkg:
       name: awstats
       secfixes:
         7.6-r2:
@@ -147,6 +153,11 @@ packages:
         0.99.4-r0:
           - CVE-2018-0202
           - CVE-2018-1000085
+  - pkg:
+      name: coreutils
+      secfixes:
+        8.28-r0:
+          - CVE-2017-18018
   - pkg:
       name: ctags
       secfixes:
@@ -292,6 +303,13 @@ packages:
           - CVE-2017-14223
           - CVE-2017-14225
   - pkg:
+      name: file
+      secfixes:
+        5.32-r1:
+          - CVE-2019-8905
+          - CVE-2019-8906
+          - CVE-2019-8907
+  - pkg:
       name: freeradius
       secfixes:
         3.0.15-r4:
@@ -417,8 +435,18 @@ packages:
           - CVE-2017-5846
           - CVE-2017-5847
   - pkg:
+      name: gvfs
+      secfixes:
+        1.34.1-r1:
+          - CVE-2019-12447
+          - CVE-2019-12448
+          - CVE-2019-12795
+          - CVE-2019-12449
+  - pkg:
       name: heimdal
       secfixes:
+        7.4.0-r4:
+          - CVE-2019-12098
         7.4.0-r3:
           - CVE-2018-16860
         7.4.0-r2:
@@ -557,6 +585,19 @@ packages:
         - CVE-2016-7971
         - CVE-2016-7972
   - pkg:
+      name: libcroco
+      secfixes:
+        0.6.12-r1:
+          - CVE-2017-7960
+          - CVE-2017-7961
+          - CVE-2017-8871
+          - CVE-2017-8834
+  - pkg:
+      name: libebml
+      secfixes:
+        1.3.5-r1:
+          - CVE-2019-13615
+  - pkg:
       name: libevent
       secfixes:
         2.1.8-r0:
@@ -571,8 +612,10 @@ packages:
   - pkg:
       name: libgcrypt
       secfixes:
+        1.8.3-r1:
+          - CVE-2019-12904
         1.8.3-r0:
-        - CVE-2018-0495
+          - CVE-2018-0495
   - pkg:
       name: libgit2
       secfixes:
@@ -599,6 +642,8 @@ packages:
   - pkg:
       name: libjpeg-turbo
       secfixes:
+        1.5.3-r3:
+        - CVE-2018-14498
         1.5.3-r2:
         - CVE-2018-11813
         1.5.3-r1:
@@ -647,6 +692,9 @@ packages:
   - pkg:
       name: libsndfile
       secfixes:
+        1.0.28-r5:
+          - CVE-2018-19758
+          - CVE-2019-3832
         1.0.28-r4:
           - CVE-2017-17456
           - CVE-2017-17457
@@ -678,6 +726,8 @@ packages:
   - pkg:
       name: libtasn1
       secfixes:
+        4.12-r4:
+          - CVE-2018-1000654
         4.12-r3:
           - CVE-2018-6003
         4.12-r1:
@@ -778,6 +828,11 @@ packages:
   - pkg:
       name: mariadb
       secfixes:
+        10.1.41-r0:
+          - CVE-2019-2805
+          - CVE-2019-2740
+          - CVE-2019-2739
+          - CVE-2019-2737
         10.1.40-r0:
           - CVE-2019-2614
           - CVE-2019-2627
@@ -843,6 +898,8 @@ packages:
   - pkg:
       name: mercurial
       secfixes:
+        4.5.2-r1:
+        - CVE-2019-3902
         4.5.2-r0:
         - CVE-2018-1000132
   - pkg:
@@ -854,6 +911,10 @@ packages:
   - pkg:
       name: mosquitto
       secfixes:
+        1.4.15-r1:
+          - CVE-2018-12546
+          - CVE-2018-12550
+          - CVE-2018-12551
         1.4.15-r0:
           - CVE-2017-7652
           - CVE-2017-7651
@@ -880,6 +941,8 @@ packages:
   - pkg:
       name: musl
       secfixes:
+        1.1.18-r4:
+          - CVE-2019-14697
         1.1.15-r4:
           - CVE-2016-8859
   - pkg:
@@ -966,6 +1029,9 @@ packages:
   - pkg:
       name: openldap
       secfixes:
+        2.4.46-r0:
+        - CVE-2017-14159
+        - CVE-2017-17740
         2.4.44-r5:
         - CVE-2017-9287
 #
@@ -1046,6 +1112,8 @@ packages:
   - pkg:
       name: patch
       secfixes:
+        2.7.5-r3:
+          - CVE-2019-13636
         2.7.5-r2:
           - CVE-2018-6951
   - pkg:
@@ -1086,6 +1154,8 @@ packages:
   - pkg:
       name: polkit
       secfixes:
+        0.105-r9:
+        - CVE-2019-6133
         0.105-r8:
         - CVE-2018-19788
   - pkg:
@@ -1128,6 +1198,13 @@ packages:
   - pkg:
       name: py-django
       secfixes:
+        1.11.23-r0:
+          - CVE-2019-14232
+          - CVE-2019-14233
+          - CVE-2019-14234
+          - CVE-2019-14235
+        1.11.22-r0:
+          - CVE-2019-12781
         1.8.16-r0:
           - CVE-2016-9013
           - CVE-2016-9014
@@ -1162,6 +1239,10 @@ packages:
   - pkg:
       name: python2
       secfixes:
+        2.7.15-r2:
+          - CVE-2019-9636
+          - CVE-2019-9948
+          - CVE-2018-14647
         2.7.15-r0:
           - CVE-2018-1060
           - CVE-2018-1061
@@ -1212,6 +1293,9 @@ packages:
   - pkg:
       name: redis
       secfixes:
+        4.0.14-r0:
+          - CVE-2019-10192
+          - CVE-2019-10193
         4.0.10-r0:
         - CVE-2018-11218
         - CVE-2018-11219
@@ -1288,6 +1372,20 @@ packages:
         4.6.1-r0:
           - CVE-2017-2619
   - pkg:
+      name: sdl2
+      secfixes:
+        2.0.10-r0:
+          - CVE-2019-7572
+          - CVE-2019-7573
+          - CVE-2019-7574
+          - CVE-2019-7575
+          - CVE-2019-7576
+          - CVE-2019-7578
+          - CVE-2019-7635
+          - CVE-2019-7636
+          - CVE-2019-7637
+          - CVE-2019-7638
+  - pkg:
       name: sdl2_image
       secfixes:
 #
@@ -1316,12 +1414,18 @@ packages:
   - pkg:
       name: sqlite
       secfixes:
+        3.25.3-r1:
+          - CVE-2019-8457
+        3.25.3-r0:
+          - CVE-2018-20346
         3.21.0-r1:
-        - CVE-2018-8740
+          - CVE-2018-8740
 #
   - pkg:
       name: squid
       secfixes:
+        3.5.27-r1:
+          - CVE-2019-13345
         3.5.27-r0:
           - CVE-2018-1000024
           - CVE-2018-1000027
@@ -1341,6 +1445,9 @@ packages:
   - pkg:
       name: subversion
       secfixes:
+        1.9.12-r0:
+          - CVE-2018-11782
+          - CVE-2019-0203
         1.9.7-r0:
           - CVE-2017-9800
   - pkg:
@@ -1407,6 +1514,11 @@ packages:
           - CVE-2017-5486
         4.9.1-r0:
           - CVE-2017-11108
+  - pkg:
+      name: tcpflow
+      secfixes:
+        1.5.0-r1:
+        - CVE-2018-18409
   - pkg:
       name: tiff
       secfixes:
@@ -1703,6 +1815,8 @@ packages:
   - pkg:
       name: zeromq
       secfixes:
+        4.2.5-r1:
+          - CVE-2019-13132
         4.2.5-r0:
           - CVE-2019-6250
   - pkg:
