@@ -1,7 +1,7 @@
 LUA = lua5.3
 
-aports = $(HOME)/aports
-gitbranch = $(shell git -C $(aports) rev-parse --abbrev-ref HEAD)
+APORTS ?= $(HOME)/aports
+gitbranch = $(shell git -C $(APORTS) rev-parse --abbrev-ref HEAD)
 rel = v$(gitbranch:-stable=)
 
 
@@ -13,11 +13,14 @@ repo=$(notdir $(basename $@))
 
 $(rel)/%.yaml:
 	$(LUA) secfixes.lua --repo $(repo) --release $(rel) \
-		$(aports)/$(repo)/*/APKBUILD > $@.tmp \
+		$(APORTS)/$(repo)/*/APKBUILD > $@.tmp \
 		&& $(LUA) secfixes.lua --verify $@.tmp \
 		&& mv $@.tmp $@
 
+.PHONY: clean
 clean:
 	rm -f $(targets)
 
-.PHONY: clean
+.PHONY: depend depends
+depend depends:
+	sudo apk add -U --virtual .secdb-depends lua5.3 lua5.3-lyaml lua5.3-optarg
