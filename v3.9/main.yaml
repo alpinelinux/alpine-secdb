@@ -15,6 +15,8 @@ packages:
   - pkg:
       name: ansible
       secfixes:
+        2.7.13-r0:
+          - CVE-2019-10206
         2.7.12-r0:
           - CVE-2019-101562
         2.7.8-r0:
@@ -30,6 +32,13 @@ packages:
   - pkg:
       name: apache2
       secfixes:
+        2.4.41-r0:
+          - CVE-2019-9517
+          - CVE-2019-10081
+          - CVE-2019-10082
+          - CVE-2019-10092
+          - CVE-2019-10097
+          - CVE-2019-10098
         2.4.39-r0:
           - CVE-2019-0196
           - CVE-2019-0197
@@ -62,6 +71,21 @@ packages:
           - CVE-2017-7659
           - CVE-2017-7668
           - CVE-2017-7679
+  - pkg:
+      name: aspell
+      secfixes:
+        0.60.6.1-r14:
+          - CVE-2019-17544
+  - pkg:
+      name: asterisk
+      secfixes:
+        15.7.4-r0:
+          - CVE-2019-7251
+          - CVE-2019-12827
+          - CVE-2019-13161
+          - CVE-2019-15297
+        15.7.1-r0:
+          - CVE-2018-19278
   - pkg:
       name: avahi
       secfixes:
@@ -188,11 +212,17 @@ packages:
   - pkg:
       name: cups
       secfixes:
+        2.2.12-r0:
+          - CVE-2019-8696
+          - CVE-2019-8675
         2.2.10-r0:
           - CVE-2018-4700
   - pkg:
       name: curl
       secfixes:
+        7.64.0-r3:
+          - CVE-2019-5481
+          - CVE-2019-5482
         7.64.0-r2:
           - CVE-2019-5435
           - CVE-2019-5436
@@ -283,6 +313,8 @@ packages:
   - pkg:
       name: dovecot
       secfixes:
+        2.3.7.2-r0:
+          - CVE-2019-11500
         2.3.6-r0:
           - CVE-2019-11499
           - CVE-2019-11494
@@ -301,6 +333,11 @@ packages:
         2018.76-r2:
           - CVE-2018-15599
   - pkg:
+      name: e2fsprogs
+      secfixes:
+        1.44.5-r1:
+          - CVE-2019-5094
+  - pkg:
       name: elfutils
       secfixes:
         0.168-r1:
@@ -309,13 +346,38 @@ packages:
   - pkg:
       name: expat
       secfixes:
+        2.2.7-r1:
+          - CVE-2019-15903
         2.2.7-r0:
-        - CVE-2018-20843
+          - CVE-2018-20843
         2.2.0-r1:
-        - CVE-2017-9233
+          - CVE-2017-9233
+  - pkg:
+      name: faad2
+      secfixes:
+        2.9.0-r0:
+          - CVE-2019-6956
+          - CVE-2018-20196
+          - CVE-2018-20199
+          - CVE-2018-20360
+          - CVE-2018-20362
+          - CVE-2018-19504
+          - CVE-2018-20195
+          - CVE-2018-20198
+          - CVE-2018-20358
+          - CVE-2018-20194
+          - CVE-2018-19503
+          - CVE-2018-20197
+          - CVE-2018-20357
+          - CVE-2018-20359
+          - CVE-2018-20361
+          - CVE-2019-15296
+          - CVE-2018-19502
   - pkg:
       name: file
       secfixes:
+        5.36-r1:
+          - CVE-2019-19218
         5.36-r0:
         - CVE-2019-8904
         - CVE-2019-8905
@@ -329,6 +391,8 @@ packages:
   - pkg:
       name: freeradius
       secfixes:
+        3.0.17-r6:
+          - CVE-2019-10143
         3.0.17-r5:
           - CVE-2019-11234
           - CVE-2019-11235
@@ -340,6 +404,11 @@ packages:
         2.7.1-r1:
           - CVE-2017-8105
           - CVE-2017-8287
+  - pkg:
+      name: fribidi
+      secfixes:
+        1.0.5-r1:
+          - CVE-2019-18397
   - pkg:
       name: fuse
       secfixes:
@@ -369,6 +438,13 @@ packages:
   - pkg:
       name: ghostscript
       secfixes:
+        9.26-r4:
+          - CVE-2019-14811
+          - CVE-2019-14812
+          - CVE-2019-14813
+          - CVE-2019-14817
+        9.26-r3:
+          - CVE-2019-10216
         9.26-r2:
           - CVE-2019-3835
           - CVE-2019-3838
@@ -452,6 +528,10 @@ packages:
   - pkg:
       name: hostapd
       secfixes:
+        2.7-r5:
+          - CVE-2019-16275
+        2.7-r4:
+          - CVE-2019-13377
         2.7-r3:
           - CVE-2019-9496
         2.7-r1:
@@ -491,6 +571,32 @@ packages:
   - pkg:
       name: imagemagick
       secfixes:
+        6.9.10.56-r0:
+          - CVE-2019-13454
+        6.9.10.53-r0:
+          - CVE-2019-13391
+          - CVE-2019-13311
+          - CVE-2019-13310
+          - CVE-2019-13309
+          - CVE-2019-13308
+          - CVE-2019-13307
+          - CVE-2019-13306
+          - CVE-2019-13305
+          - CVE-2019-13304
+          - CVE-2019-13303
+          - CVE-2019-13302
+          - CVE-2019-13301
+          - CVE-2019-13300
+          - CVE-2019-13299
+          - CVE-2019-13298
+          - CVE-2019-13297
+          - CVE-2019-13296
+          - CVE-2019-13295
+          - CVE-2019-13137
+          - CVE-2019-13136
+          - CVE-2019-13135
+          - CVE-2019-13134
+          - CVE-2019-13133
         7.0.8.44-r0:
           - CVE-2019-11598
           - CVE-2019-11597
@@ -599,6 +705,12 @@ packages:
   - pkg:
       name: libarchive
       secfixes:
+        3.3.3-r1:
+          - CVE-2019-18408
+        3.3.3-r0:
+          - CVE-2017-14501
+          - CVE-2017-14502
+          - CVE-2017-14503
         3.3.2-r1:
           - CVE-2017-14166
   - pkg:
@@ -637,6 +749,8 @@ packages:
   - pkg:
       name: libgcrypt
       secfixes:
+        1.8.5-r0:
+          - CVE-2019-13627
         1.8.4-r1:
           - CVE-2019-12904
         1.8.3-r0:
@@ -678,6 +792,13 @@ packages:
         - CVE-2018-11813
         1.5.3-r2:
         - CVE-2018-1152
+  - pkg:
+      name: libmad
+      secfixes:
+        0.15.1b-r9:
+          - CVE-2017-8372
+          - CVE-2017-8373
+          - CVE-2017-8374
   - pkg:
       name: libmspack
       secfixes:
@@ -757,6 +878,8 @@ packages:
   - pkg:
       name: libvncserver
       secfixes:
+        0.9.11-r3:
+          - CVE-2019-15681
         0.9.11-r2:
           - CVE-2018-7225
         0.9.11-r0:
@@ -820,10 +943,12 @@ packages:
   - pkg:
       name: libxslt
       secfixes:
+        1.1.33-r2:
+          - CVE-2019-18197
         1.1.33-r1:
-        - CVE-2019-11068
+          - CVE-2019-11068
         1.1.29-r1:
-        - CVE-2017-5029
+          - CVE-2017-5029
   - pkg:
       name: lua5.3
       secfixes:
@@ -921,6 +1046,8 @@ packages:
   - pkg:
       name: mosquitto
       secfixes:
+        1.5.6-r1:
+          - CVE-2019-11779
         1.5.6-r0:
           - CVE-2018-12546
           - CVE-2018-12550
@@ -967,8 +1094,24 @@ packages:
         6.0_p20170701-r0:
           - CVE-2017-10684
   - pkg:
+      name: nfdump
+      secfixes:
+        1.6.18-r0:
+          - CVE-2019-14459
+          - CVE-2019-1010057
+  - pkg:
+      name: nghttp2
+      secfixes:
+        1.35.1-r1:
+          - CVE-2019-9511
+          - CVE-2019-9513
+  - pkg:
       name: nginx
       secfixes:
+        1.14.1-r2:
+          - CVE-2019-9511
+          - CVE-2019-9513
+          - CVE-2019-9516
         1.14.1-r0:
           - CVE-2018-16843
           - CVE-2018-16844
@@ -976,6 +1119,12 @@ packages:
         1.12.1-r0:
           - CVE-2017-7529
 #
+  - pkg:
+      name: nmap
+      secfixes:
+        7.70-r4:
+          - CVE-2017-18594
+          - CVE-2018-15173
   - pkg:
       name: nodejs
       secfixes:
@@ -1037,6 +1186,9 @@ packages:
   - pkg:
       name: openldap
       secfixes:
+        2.4.48-r0:
+        - CVE-2019-13565
+        - CVE-2019-13057
         2.4.46-r0:
         - CVE-2017-14159
         - CVE-2017-17740
@@ -1062,6 +1214,10 @@ packages:
   - pkg:
       name: openssl
       secfixes:
+        1.1.1d-r0:
+          - CVE-2019-1547
+          - CVE-2019-1549
+          - CVE-2019-1563
         1.1.1b-r1:
           - CVE-2019-1543
         1.1.1a-r0:
@@ -1078,8 +1234,16 @@ packages:
         16.02-r1:
         - CVE-2016-9296
   - pkg:
+      name: pango
+      secfixes:
+        1.42.4-r1:
+          - CVE-2019-1010238
+  - pkg:
       name: patch
       secfixes:
+        2.7.6-r6:
+          - CVE-2018-1000156
+          - CVE-2019-13638
         2.7.6-r5:
           - CVE-2019-13636
         2.7.6-r2:
@@ -1119,13 +1283,21 @@ packages:
   - pkg:
       name: polkit
       secfixes:
-        0.105-r10:
+        0.105-r11:
         - CVE-2019-6133
         0.105-r9:
         - CVE-2018-19788
   - pkg:
+      name: poppler
+      secfixes:
+        0.56.0-r2:
+          - CVE-2019-9959
+  - pkg:
       name: postgresql
       secfixes:
+        11.5-r0:
+        - CVE-2019-10208
+        - CVE-2019-10209
         11.4-r0:
         - CVE-2019-10164
         11.3-r0:
@@ -1209,8 +1381,12 @@ packages:
   - pkg:
       name: python3
       secfixes:
+        3.6.9-r2:
+          - CVE-2019-16935
+        3.6.9-r1:
+          - CVE-2019-16056
         3.6.8-r1:
-        - CVE-2019-5010
+          - CVE-2019-5010
   - pkg:
       name: qemu
       secfixes:
@@ -1277,8 +1453,19 @@ packages:
           - CVE-2017-17434-1
           - CVE-2017-17434-2
   - pkg:
+      name: rsyslog
+      secfixes:
+        8.40.0-r4:
+          - CVE-2019-17041
+          - CVE-2019-17042
+  - pkg:
       name: ruby
       secfixes:
+        2.5.7-r0:
+          - CVE-2019-16255
+          - CVE-2019-16254
+          - CVE-2019-15845
+          - CVE-2019-16201
         2.5.5-r0:
           - CVE-2019-8320
           - CVE-2019-8321
@@ -1340,6 +1527,22 @@ packages:
         4.6.1-r0:
           - CVE-2017-2619
   - pkg:
+      name: sdl
+      secfixes:
+        1.2.15-r10:
+          - CVE-2019-7572
+          - CVE-2019-7573
+          - CVE-2019-7574
+          - CVE-2019-7575
+          - CVE-2019-7576
+          - CVE-2019-7577
+          - CVE-2019-7577
+          - CVE-2019-7578
+          - CVE-2019-7635
+          - CVE-2019-7636
+          - CVE-2019-7637
+          - CVE-2019-7638
+  - pkg:
       name: sdl2
       secfixes:
         2.0.10-r0:
@@ -1356,6 +1559,18 @@ packages:
   - pkg:
       name: sdl2_image
       secfixes:
+        2.0.5-r0:
+          - CVE-2019-5060 TALOS-2019-0844
+          - CVE-2019-5059 TALOS-2019-0843
+          - CVE-2019-5058 TALOS-2019-0842
+          - CVE-2019-5057 TALOS-2019-0841
+          - CVE-2019-5052 TALOS-2019-0821
+          - CVE-2019-5051 TALOS-2019-0820
+          - CVE-2019-12222
+          - CVE-2019-12221
+          - CVE-2019-12219
+          - CVE-2019-12218
+          - CVE-2019-12217
         2.0.3-r0:
           - CVE-2017-12122 TALOS-2017-0488
           - CVE-2017-14440 TALOS-2017-0489
@@ -1387,12 +1602,16 @@ packages:
   - pkg:
       name: sqlite
       secfixes:
+        3.28.0-r1:
+          - CVE-2019-16168
         3.28.0-r0:
         - CVE-2019-5018
         - CVE-2019-8457
   - pkg:
       name: squid
       secfixes:
+        4.8-r1:
+          - CVE-2019-18679
         4.8-r0:
           - CVE-2019-13345
         3.5.27-r2:
@@ -1495,6 +1714,10 @@ packages:
   - pkg:
       name: tiff
       secfixes:
+        4.0.10-r2:
+          - CVE-2019-10927
+        4.0.10-r1:
+          - CVE-2019-14973
         4.0.10-r0:
           - CVE-2018-12900
           - CVE-2018-18557
@@ -1541,6 +1764,11 @@ packages:
           - CVE-2018-16738
           - CVE-2018-16758
   - pkg:
+      name: unbound
+      secfixes:
+        1.8.3-r2:
+          - CVE-2019-16866
+  - pkg:
       name: unzip
       secfixes:
         6.0-r3:
@@ -1562,10 +1790,12 @@ packages:
   - pkg:
       name: varnish
       secfixes:
+        6.2.1-r0:
+          - CVE-2019-15892
         5.2.1-r0:
-        - CVE-2017-8807
+          - CVE-2017-8807
         5.1.3-r0:
-        - CVE-2017-12425
+          - CVE-2017-12425
   - pkg:
       name: vim
       secfixes:
@@ -1586,6 +1816,11 @@ packages:
   - pkg:
       name: wavpack
       secfixes:
+        5.1.0-r8:
+          - CVE-2019-1010319
+          - CVE-2019-1010317
+          - CVE-2019-1010315
+          - CVE-2019-11498
         5.1.0-r7:
           - CVE-2018-19840
           - CVE-2018-19841
@@ -1625,6 +1860,10 @@ packages:
   - pkg:
       name: wpa_supplicant
       secfixes:
+        2.7-r5:
+          - CVE-2019-16275
+        2.7-r4:
+          - CVE-2019-13377
         2.7-r3:
           - CVE-2019-11555
         2.7-r2:
@@ -1785,6 +2024,19 @@ packages:
           - CVE-2018-12127  XSA-297
           - CVE-2018-12130  XSA-297
           - CVE-2019-11091  XSA-297
+        4.11.2-r0:
+          - CVE-????-?????  XSA-284
+          - CVE-????-?????  XSA-285
+          - CVE-????-?????  XSA-286
+          - CVE-????-?????  XSA-287
+          - CVE-????-?????  XSA-288
+          - CVE-????-?????  XSA-290
+          - CVE-????-?????  XSA-291
+          - CVE-????-?????  XSA-292
+          - CVE-????-?????  XSA-293
+          - CVE-????-?????  XSA-294
+          - CVE-????-?????  XSA-295
+          - CVE-????-?????  XSA-296
   - pkg:
       name: xorg-server
       secfixes:
