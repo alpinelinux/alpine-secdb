@@ -77,6 +77,7 @@ archs = {
 	["v3.8"] = { "x86_64", "x86", "armhf", "aarch64", "ppc64le", "s390x" },
 	["v3.9"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
 	["v3.10"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
+	["v3.11"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
 }
 
 opts, args = require('optarg').from_opthelp(opthelp)
