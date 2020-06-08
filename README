@@ -6,3 +6,6 @@ backported fixes. It is not a complete database of all security issues in
 Alpine, and it should be used in combination with another more complete CVE
 database.
 
+The data in here is deprecated. Please use the up-to-date data from
+https://secdb.alpinelinux.org/
+
