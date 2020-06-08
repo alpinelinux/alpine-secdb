@@ -101,6 +101,7 @@ rel = get_release(distroversion, opts["releases-json"])
 -- print header
 io.write(([[
 ---
+timestamp: %s
 distroversion: %s
 reponame: %s
 archs:
@@ -108,7 +109,7 @@ archs:
 urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
-]]):format(distroversion, repo))
+]]):format(os.date("!%Y-%m-%dT%TZ"), distroversion, repo))
 
 for i = 1,#arg do
 	read_apkbuild(arg[i])
