@@ -1,4 +1,8 @@
 LUA = lua5.3
+APK ?= abuild-apk
+
+releases_json := releases.json
+releases_url := https://alpinelinux.org/$(releases_json)
 
 APORTS ?= $(HOME)/aports
 gitbranch = $(shell git -C $(APORTS) rev-parse --abbrev-ref HEAD)
@@ -11,7 +15,11 @@ all: $(targets)
 
 repo=$(notdir $(basename $@))
 
-$(rel)/%.yaml:
+$(releases_json):
+	wget --output-document $@ $(releases_url)
+
+$(rel)/%.yaml: $(releases_json)
+	mkdir -p $(dir $@)
 	$(LUA) secfixes.lua --repo $(repo) --release $(rel) \
 		$(APORTS)/$(repo)/*/APKBUILD > $@.tmp \
 		&& $(LUA) secfixes.lua --verify $@.tmp \
@@ -19,8 +27,8 @@ $(rel)/%.yaml:
 
 .PHONY: clean
 clean:
-	rm -f $(targets)
+	rm -f $(targets) releases.json
 
 .PHONY: depend depends
 depend depends:
-	sudo apk add -U --virtual .secdb-depends lua5.3 lua5.3-lyaml lua5.3-optarg
+	$(APK) add -U --virtual .secdb-depends $(LUA) $(LUA)-lyaml $(LUA)-cjson $(LUA)-optarg

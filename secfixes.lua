@@ -1,6 +1,7 @@
 -- script to parse the aports tree and generate the secdb yaml
 
-yaml = require('lyaml')
+local yaml = require('lyaml')
+local json = require('cjson')
 
 function read_apkbuild(file)
 	local repo,  pkg = file:match("([a-z]+)/([^/]+)/APKBUILD")
@@ -32,10 +33,11 @@ function read_apkbuild(file)
 	f:close()
 end
 
-function arch_list(a)
+function arch_list(arches)
 	local str=""
-	for i=1,#a do
-		str=str.."  - "..a[i].."\n"
+	local _,arch
+	for _,arch in ipairs(arches) do
+		str=str.."  - "..arch.."\n"
 	end
 	return str
 end
@@ -60,27 +62,32 @@ function verify_yaml(file)
 	f:close()
 end
 
+function get_release(distroversion, filename)
+	local f = assert(io.open(filename or "releases.json", "r"))
+	local data = assert(json.decode(f:read("*a")))
+	f:close()
+
+	for _,rel in ipairs(data.release_branches) do
+		if rel.rel_branch == distroversion then
+			return rel
+		end
+	end
+end
+
 opthelp = [[
 
  --repo=REPO		set repository
  --release=VERSION	distro release branch
  --verify=FILE		verify generated yaml
+ --releases-json=FILE	path to releases.json
 ]]
 
-archs = {
-	["v3.2"] = { "x86_64", "x86", "armhf" },
-	["v3.3"] = { "x86_64", "x86", "armhf" },
-	["v3.4"] = { "x86_64", "x86", "armhf" },
-	["v3.5"] = { "x86_64", "x86", "armhf", "aarch64" },
-	["v3.6"] = { "x86_64", "x86", "armhf", "aarch64", "ppc64le", "s390x" },
-	["v3.7"] = { "x86_64", "x86", "armhf", "aarch64", "ppc64le", "s390x" },
-	["v3.8"] = { "x86_64", "x86", "armhf", "aarch64", "ppc64le", "s390x" },
-	["v3.9"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
-	["v3.10"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
-	["v3.11"] = { "x86_64", "x86", "armhf", "armv7", "aarch64", "ppc64le", "s390x" },
-}
-
 opts, args = require('optarg').from_opthelp(opthelp)
+
+if not opts then
+	io.stderr:write(opthelp)
+	os.exit(1)
+end
 
 if opts.verify then
 	os.exit(verify_yaml(opts.verify))
@@ -89,13 +96,15 @@ end
 repo = (opts.repo or "main")
 distroversion = (opts.release or "v3.4")
 
+rel = get_release(distroversion, opts["releases-json"])
+
 -- print header
 io.write(([[
 ---
 distroversion: %s
 reponame: %s
 archs:
-]]..arch_list(archs[distroversion])..[[
+]]..arch_list(rel.arches)..[[
 urlprefix: http://dl-cdn.alpinelinux.org/alpine
 apkurl: "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk"
 packages:
