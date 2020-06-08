@@ -1,11 +1,11 @@
 Alpine Security Database of Backported fixes
 --------------------------------------------
 
-The purpose of this database is to make it possible to know what packages has
-backported fixes. It is not a complete database of all security issues in
-Alpine, and it should be used in combination with another more complete CVE
-database.
+This repository is deprecated.
 
-The data in here is deprecated. Please use the up-to-date data from
+Please use the up-to-date data from
 https://secdb.alpinelinux.org/
+
+Scripts to generate the data is managed in
+https://gitlab.alpinelinux.org/alpine/infra/docker/secdb
 
